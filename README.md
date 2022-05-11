@@ -179,7 +179,8 @@ Finally, the _Campground Details API_ also provides a list of amenities in each 
   <amenity distance="Within Facility" name="Snow Shoeing"/>
   <amenity distance="Within Facility" name="Snow Sledding"/>
   <amenity distance="Within Facility" name="Visitor Center"/>
-  <amenity distance="Within Facility" name="Wildlife Watching Opportunity"/>```
+  <amenity distance="Within Facility" name="Wildlife Watching Opportunity"/>
+  ```
 
 The main potential disadvantage of working with the _ActiveAccess_ APIs is the data type. The current versions of the APIs provide output as `.XML` which may require more steps to clean and format than `JSON` APIs that are potentially more user-friendly.
 
