@@ -196,3 +196,6 @@ Campsite availability is a notorious thorn in the side of any camper, especially
 2. [Place Details API](https://developers.google.com/maps/documentation/places/web-service/details) - Good when we want to add additional attractions by place `type` [parameter](https://developers.google.com/maps/documentation/places/web-service/supported_types#table1), such as `museum`, `art_gallery`, or `zoo`. Also supports reviews or `rating` as a way of marking how 'good' a particular attraction is.
 3. [Directions API - route from A to B to C](https://developers.google.com/maps/documentation/directions/get-directions)
 4. [Distance Matrix API - estimate travel time and distance for multiple destinations](https://developers.google.com/maps/documentation/distance-matrix/start) - on top of knowing the optimal route to get there, we need to understand how long the journey will take.
+
+## DataBase Diagram
+<img src = "Images/Trippr_DataBase_Diagram.png>
