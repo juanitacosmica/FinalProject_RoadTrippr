@@ -1,0 +1,8 @@
+This weekend, you'll just need to submit a link to your group repository that has:
+
+-README write up about what the project is that includes what problem your model will be solving and which dataset you're using
+-A branch for every person in the group
+-An ERD / explanation of what you're planning to do for the database
+-A diagram / explanation of what you're planning to do for the Machine Learning model
+
+You don't need to code out the model or the database just yet, no worries!
