@@ -198,4 +198,4 @@ Campsite availability is a notorious thorn in the side of any camper, especially
 4. [Distance Matrix API - estimate travel time and distance for multiple destinations](https://developers.google.com/maps/documentation/distance-matrix/start) - on top of knowing the optimal route to get there, we need to understand how long the journey will take.
 
 ## DataBase Diagram
-<img src = "Images/Trippr_DataBase_Diagram.png>
+<img src = "Images/Trippr_DataBase_Diagram.png">
