@@ -1,15 +1,82 @@
 TrippR
 ======
 
-## Data Research ##
+# Overview
+
+TrippR is a navigation and travel recommendation app.
+
+## Purpose
+
+According to a recent survey of road travelers in the US, more than three-quarters (78%) of Americans have found hidden gems along the road that they wouldn't have seen if they were traveling another way. More than one-third (35%) said they prefer a mix of both planned and unexpected stops. Currently even the best travel recommendation apps don't optimize for route and even the best navigation apps don't optimize for the relevance and quality of experience. TrippR does both, as well as provides high-quality recommendations based on a user profile.
+
+## The Goal
+
+Generate the most relevant travel itinerary based on location and destination information according to a user's profile. Create an itinerary and display a map with the waypoints, route, and place information.
+
+_Initially this is limited to_:
+Offer 3 options for potential trips consisting of 3 destinations (up to 1:_attraction/sightseeing_; 1:_activity_; 1:_food_). Optimization for best route and highest preference are assumed at 25km.
+
+# How it Works
+
+An ML-driven recommendation algorithm powered by Google APIs. A profile is created for users based on a short survey which can then provide the most relevant travel suggestions between a departure and arrival destination.
+
+(See our __presentation:__ <https://bit.ly/3FJNgXG>)
+
+## In this section:
+
+1. Travel Preferences
+2. Recommendations
+3. Iterative Reclustering
+4. Route Optimization
+
+### Travel preferences
+
+Using a dataset containing comprised of user ratings across 24 categories of place `type` in Google and TripAdvisor reviews, we assemble clusters that represent a fingerprint of different traveler paradigms. These clusters act as a reasonable predictor of which attractions a user will like the most.
+
+(_A [project](https://vasanth16.github.io/) and this dataset is [kindly provided by the UCI Machine Learning Repository at UC Irvine](https://archive.ics.uci.edu/ml/about.html)._)
+
+### Recommendations
+
+According to the user's profile the algorithm predicts how they would score each category of attraction and identifies the most highly rated locations. These are used to create the optimal travel itinerary based on the type of place and the route information. Users select from 3 recommended travel itineraries according to their preference.
+
+### Route Optimization
+
+Stops in each itinerary are co-optimized for highest quality experience and efficient navigation between the starting and ending destination. _Initially_, only stops within 25km of the intended route will be recommended.
+
+### Iterative reclustering
+
+As users select more trips the recommendations should improve in precision and quality. User preferences are fed back into the model to improve the accuracy and segmentation of each of the groupings, and an individual user's selections are iterated to improve their most accurate assignment to the correct cluster.
+
+# Data Research
 
 ### In this section:
 
+* ML training data
 * info on relevant APIs
 * info on available data and format
 * next steps
+* some of the projects we looked at
 
-### Parks
+### Training data
+
+In order to provide accurate travel recommendations, our algorithm needs to understand travel preferences then assign a profile to the user. We researched datasets on tourism preferences that would support the correct assignment of trip types and destinations. Categories of traveler should be able to be assembled based on a representative sample of recent and relevant travel preference information.
+
+A [project](https://vasanth16.github.io/#Part-5:-Finding-Clusters-in-our-Data) which previously modelled based on this user ratings dataset k-means clustering. We saw other examples that employed, variously: naive Bayesian, neural network, deep learning, and PCA models.
+
+### APIs
+
+* Google APIs are our friend.
+
+1. [Places API - Find A Place](https://developers.google.com/maps/documentation/places/web-service/search-find-place#find-place-responses)
+2. [Place Details API](https://developers.google.com/maps/documentation/places/web-service/details) - Good when we want to add additional attractions by place `type` [parameter](https://developers.google.com/maps/documentation/places/web-service/supported_types#table1), such as `museum`, `art_gallery`, or `zoo`. Also supports reviews or `rating` as a way of marking how 'good' a particular attraction is.
+3. [Directions API - route from A to B to C](https://developers.google.com/maps/documentation/directions/get-directions)
+4. [Distance Matrix API - estimate travel time and distance for multiple destinations](https://developers.google.com/maps/documentation/distance-matrix/start) - on top of knowing the optimal route to get there, we need to understand how long the journey will take.
+
+(longer description and response examples will follow)
+
+### Trip Types
+
+#### Parks
 
 Opting to start with parks as a way of initially narrowing the scope of the route optimization problem. Parks data is provided by a variety of government and non-government APIs, some of which are explored below.
 
@@ -188,11 +255,67 @@ The main potential disadvantage of working with the _ActiveAccess_ APIs is the d
 
 Campsite availability is a notorious thorn in the side of any camper, especially during the summer months. Parks that are fully occupied won't make a suitable destination for our would-be road trippers. Perhaps out of scope for our current project, but wanted to footnote it here. Various attempts have been made to programmatically scrape the various provincial parks reservations platforms for campsite availability, for example [here](https://www.cbc.ca/news/canada/british-columbia/savvy-coders-find-way-to-nab-coveted-b-c-camping-spots-1.6081267) or [here (closed source)](https://campnab.com/) or [here (closed source)](https://sitescout.ca/).
 
-* Google APIs are our friend.
 
-(longer description and response examples will follow)
+# Projects for reference
+<https://github.com/rhiever/Data-Analysis-and-Machine-Learning-Projects/blob/master/pareto-optimized-road-trip/optimized-state-capitols-trip.ipynb>
 
-1. [Places API - Find A Place](https://developers.google.com/maps/documentation/places/web-service/search-find-place#find-place-responses)
-2. [Place Details API](https://developers.google.com/maps/documentation/places/web-service/details) - Good when we want to add additional attractions by place `type` [parameter](https://developers.google.com/maps/documentation/places/web-service/supported_types#table1), such as `museum`, `art_gallery`, or `zoo`. Also supports reviews or `rating` as a way of marking how 'good' a particular attraction is.
-3. [Directions API - route from A to B to C](https://developers.google.com/maps/documentation/directions/get-directions)
-4. [Distance Matrix API - estimate travel time and distance for multiple destinations](https://developers.google.com/maps/documentation/distance-matrix/start) - on top of knowing the optimal route to get there, we need to understand how long the journey will take.
+# Flex Goals
+
+## Preferences
+* Explore additional training data and compare the accuracy.
+* Input loop + retraining.
+* Maybe, post-trip the user rates each attraction /5 and that is used to re-weight their own assigned "rating"
+* Predicting ratings (can we replicate was was done by [Vasanth](https://vasanth16.github.io/#Part-6:-Predicting-Ratings) project?)
+
+## Recommendations
+* filter out/for place `type`(s)
+
+## Itinerary
+* multi-stop
+* multi-day
+* multi-route
+* time (driving hours/distance per day, time to stop at each attraction - can the suggested trip be done in the allotted time?)
+* time of day
+For eg. not all attractions can be visited at all times. Can use `opening_hours`
+```      "opening_hours":
+        {
+          "open_now": false,
+          "periods":
+            [
+              {
+                "close": { "day": 1, "time": "1700" },
+                "open": { "day": 1, "time": "0900" },
+              },
+              {
+                "close": { "day": 2, "time": "1700" },
+                "open": { "day": 2, "time": "0900" },
+              },
+              {
+                "close": { "day": 3, "time": "1700" },
+                "open": { "day": 3, "time": "0900" },
+              },
+              {
+                "close": { "day": 4, "time": "1700" },
+                "open": { "day": 4, "time": "0900" },
+              },
+              {
+                "close": { "day": 5, "time": "1700" },
+                "open": { "day": 5, "time": "0900" },
+              },
+            ],
+          "weekday_text":
+            [
+              "Monday: 9:00 AM – 5:00 PM",
+              "Tuesday: 9:00 AM – 5:00 PM",
+              "Wednesday: 9:00 AM – 5:00 PM",
+              "Thursday: 9:00 AM – 5:00 PM",
+              "Friday: 9:00 AM – 5:00 PM",
+              "Saturday: Closed",
+              "Sunday: Closed",
+            ],
+        },
+```
+
+* Budget
+* filter by 
+* gas costs? (vehicle type?)
