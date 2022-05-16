@@ -1,19 +1,116 @@
 TrippR
 ======
 
-## Data Research ##
+# Overview
 
-### In this section:
+TrippR is a navigation and travel recommendation app.
 
+# Table of Contents
+
+1. [Overview](#purpose)
+* [The Goal](#the-goal)
+* [Purpose](#purpose)
+2. [How It Works](#how-it-works)
+3. [Data Research](#data-research)
+4. [Related Work](#related-work)
+5. [Challenges](#challenges)
+6. [Flex Goals](#flex-goals)
+
+## Purpose
+
+According to a recent survey of road travelers in the US, more than three-quarters (78%) of Americans have found hidden gems along the road that they wouldn't have seen if they were traveling another way. More than one-third (35%) said they prefer a mix of both planned and unexpected stops. Currently even the best travel recommendation apps don't optimize for route and even the best navigation apps don't optimize for the relevance and quality of the experience. TrippR does both, as well as provides high-quality recommendations based on a user profile.
+
+## The Goal
+
+Generate the most relevant travel itinerary based on location and destination information according to a user's profile. Create an itinerary and display a map with the waypoints, route, and place information.
+
+_Initially this is limited to_:
+Offer 3 options for potential trips consisting of 3 destinations (up to 1:_attraction/sightseeing_; 1:_activity_; 1:_food_). Optimization for best route and highest preference are assumed at a maximum route deviation tolerance of 25km.
+
+# How it Works
+
+An ML-driven recommendation algorithm powered by Google APIs. A profile is created for users based on a short survey which can then provide the most relevant travel suggestions between a departure and arrival destination.
+
+(See our __presentation:__ <https://bit.ly/3FJNgXG>)
+
+## In this section:
+
+1. Travel Preferences
+2. Recommendations
+3. Iterative Reclustering
+4. Route Optimization
+
+### Travel preferences
+
+Using a dataset containing comprised of user ratings across 24 categories of place `type` in Google and TripAdvisor reviews, we assemble clusters that represent a fingerprint of different traveler paradigms. These clusters act as a reasonable predictor of which attractions a user will like the most.
+
+(_A past UCI [project](https://vasanth16.github.io/) and this dataset is [kindly provided by the UCI Machine Learning Repository at UC Irvine](https://archive.ics.uci.edu/ml/about.html)._)
+
+### Recommendations
+
+TrippR users register and answer a According to the user's profile the algorithm predicts how they would score each category of attraction and identifies the most highly rated locations. These are used to create the optimal travel itinerary based on the type of place and the route information. Users select from 3 recommended travel itineraries according to their preference.
+
+### Route Optimization
+
+Stops in each itinerary are co-optimized for highest quality experience and efficient navigation between the starting and ending destination. _Initially_, only stops within 25km of the intended route will be recommended and the number of stops is fixed at 3.
+
+Navigation is essentially a graph problem. Places that are likely to be preferred by a particular user will be ranked more highly and considered more 'worth' visiting - at the same time other factors like driving distance, driving time, time of day, trip duration, and final destination also impact which places can be adequately visited during a particular trip. The challenge of this component is balancing the best quality itinerary while making recommendations that are still feasible.
+
+### Iterative reclustering
+
+As users select more trips the recommendations should improve in precision and quality. User preferences are fed back into the model to improve the accuracy and segmentation of each of the groupings, and an individual user's selections are iterated to improve their most accurate assignment to the correct cluster.
+
+## Technologies
+
+* Google Maps
+* Python
+* Javascript
+* SKlearn
+* Firebase
+* HTML + CSS
+
+# Data Research
+
+## In this section:
+
+* ML training data
 * info on relevant APIs
 * info on available data and format
 * next steps
+* some of the projects we looked at
 
-### Parks
+### Training data
 
-Opting to start with parks as a way of initially narrowing the scope of the route optimization problem. Parks data is provided by a variety of government and non-government APIs, some of which are explored below.
+In order to provide accurate travel recommendations, our algorithm needs to understand travel preferences then assign a profile to the user. We researched datasets on tourism preferences that would support the correct assignment of trip types and destinations. Categories of traveler should be able to be assembled based on a representative sample of recent and relevant travel preference information.
 
-* National Parks
+A [project](https://vasanth16.github.io/#Part-5:-Finding-Clusters-in-our-Data) which previously modelled based on this user ratings dataset k-means clustering. We saw other examples that employed, variously: naive Bayesian, neural network, deep learning, and PCA models. Some of them are referenced below in the [Related Work](#related-work) section.
+
+### APIs
+
+* Google APIs are our friend.
+
+1. [Places API - Find A Place](https://developers.google.com/maps/documentation/places/web-service/search-find-place#find-place-responses)
+2. [Place Details API](https://developers.google.com/maps/documentation/places/web-service/details) - Good when we want to add additional attractions by place `type` [parameter](https://developers.google.com/maps/documentation/places/web-service/supported_types#table1), such as `museum`, `art_gallery`, or `zoo`. Also supports reviews or `rating` as a way of marking how 'good' a particular attraction is.
+3. [Directions API - route from A to B to C](https://developers.google.com/maps/documentation/directions/get-directions)
+4. [Distance Matrix API - estimate travel time and distance for multiple destinations](https://developers.google.com/maps/documentation/distance-matrix/start) - on top of knowing the optimal route to get there, we need to understand how long the journey will take.
+
+(longer description and response examples will follow)
+
+__Limitations:__ 
+
+* Max requests: Number of API requests goes up `O(n²)` as the number of destinations.
+* Place Search vs. Nearby Search: [From Google API docs](https://developers.google.com/maps/documentation/places/web-service/search-nearby)
+>Nearby Search and Text Search return all of the available data fields for the selected place (a subset of the supported fields), and you will be billed accordingly There is no way to constrain Nearby Search or Text Search to only return specific fields. To keep from requesting (and paying for) data that you don't need, use a Find Place request instead.
+* License: Scraping and offline storage of Google Maps data is apparently _prohibited_ (from [Terms of Service](https://cloud.google.com/maps-platform/terms/#3-license)):
+>3.2.3 Restrictions Against Misusing the Services. (a)  No Scraping. Customer will not export, extract, or otherwise scrape Google Maps Content for use outside the Services. For example, Customer will not: (i) pre-fetch, index, store, reshare, or rehost Google Maps Content outside the services; (ii) bulk download Google Maps tiles, Street View images, geocodes, directions, distance matrix results, roads information, places information, elevation values, and time zone details; (iii) copy and save business names, addresses, or user reviews; or (iv) use Google Maps Content with text-to-speech services.
+
+### Trip Types
+
+#### Parks
+
+Opting to start with parks as a way of initially narrowing the scope of the route optimization problem. Parks data is provided by a variety of government and non-government APIs, some of which are explored below. Camping areas come with a fixed unit of duration (# of nights) and provide only a reasonably limited number of options in proximity to the route. This section speaks to the data retrieval and waypoint optimization process.
+
+##### National Parks
 
 Parks Canada administers National Parks on a federal level. There are limitations to using _only_ national parks: there are [only 48 national parks and protected areas](https://ftp.geogratis.gc.ca/pub/nrcan_rncan/raster/atlas_6_ed/reference/eng/natpks_e.pdf "National Parks map") in total, and these are sparsely distributed, with many not road-accessible.
 
@@ -48,7 +145,7 @@ Example JSON output of Find Place responses:
 ```
 More on Places and other Google APIs is discussed below.
 
-* Provincial Parks
+##### Provincial Parks
 
 Parks authorities also administer the majority(?) of Canada's parks on a provincial level, for example Ontario parks oversees [343 provincial parks and protected areas](https://geohub.lio.gov.on.ca/datasets/c5191fcd8a944eaf91920b4ed914825a_4/explore?location=49.424602%2C-83.488646%2C3.88 "Map of Ontario Parks") along the following categories:
 * Wilderness
@@ -62,7 +159,7 @@ These are included in the following Land Information Ontario database: <https://
 
 This official registry also lacks the precise `location` and `address` information required to provide accurate road navigation directions, like we discussed in the section above, so syncing up this canonical list of parks with place data from companion APIs will be essential to populating an accurate database entry.
 
-* All Campgrounds
+##### All Campgrounds
 
 On this road trip there are obviously more places to pitch a tent than just simply government-administered parks. For instance, there are over 500 conservation areas in Ontario (of which 300 are accessible to the public) and these are governed by [36 local Conservation Authorities](https://conservationontario.ca/conservation-authorities/find-a-conservation-authority "map of Ontario Conservation Authorities"). Moreover, there are countless unincorporated and private campgrounds that fall outside the administrative jurisdiction of these respective federal, provincial, and municipal bodies.
 
@@ -184,15 +281,230 @@ Finally, the _Campground Details API_ also provides a list of amenities in each 
 
 The main potential disadvantage of working with the _ActiveAccess_ APIs is the data type. The current versions of the APIs provide output as `.XML` which may require more steps to clean and format than `JSON` APIs that are potentially more user-friendly.
 
+##### Recreation Dot Gov
+
+The US Recreation Information Database (RIDB) provides the RIDB API - an authoritative single point of access to information and services on federal lands, historic sites, museums, and other attractions/resources. A one-stop, searchable database of recreational areas nationwide. The RIDB API documentation and schema can be found at: <https://ridb.recreation.gov/docs>
+
+Calls to `recareas` returns the following location, address, description, facility, and activity information.
+```{
+   "RECDATA": [
+    {
+      "RecAreaID": "2837",
+      "OrgRecAreaID": "MORU",
+      "ParentOrgID": "128",
+      "RecAreaName": "Mount Rushmore National Memorial",
+      "RecAreaDescription": "Majestic figures of George Washington, Thomas Jefferson, Theodore Roosevelt and Abraham Lincoln, surrounded by the beauty of the Black Hills of South Dakota, tell the story of the birth, growth, development and preservation of this country. From the history of the first inhabitants to the diversity of America today, Mount Rushmore brings visitors face to face with the rich heritage we all share.",
+      "RecAreaFeeDescription": "",
+      "RecAreaDirections": "Visitors traveling by car from the East use Exit 61 off I-90 follow signs. Coming from the West use exit 57 exit at Rapid City and follow U.S. Highway 16 southwest to Keystone and then Highway 244 to Mount Rushmore. Visitors coming from the south should follow Highway 385 north to Highway 244, which is the road leading to the memorial.",
+      "RecAreaPhone": "(605) 574-2523",
+      "RecAreaEmail": "ed_menard@nps.gov",
+      "RecAreaReservationURL": "",
+      "RecAreaMapURL": "",
+      "GEOJSON": {
+        "TYPE": "Point",
+        "COORDINATES": [
+          -103.4525186,
+          43.88037021
+        ]
+      },
+      "RecAreaLongitude": -103.4525186,
+      "RecAreaLatitude": 43.88037021,
+      "StayLimit": "",
+      "Keywords": "Mount Rushmore National Memorial",
+      "Reservable": false,
+      "Enabled": true,
+      "LastUpdatedDate": "2018-10-01",
+      "ORGANIZATION": [
+        {
+          "OrgID": "128",
+          "OrgName": "National Park Service",
+          "OrgImageURL": "nps.jpeg",
+          "OrgURLText": "",
+          "OrgURLAddress": "http://www.nps.gov",
+          "OrgType": "Department of the Interior",
+          "OrgAbbrevName": "NPS",
+          "OrgJurisdictionType": "Federal",
+          "OrgParentID": "139",
+          "LastUpdatedDate": "2018-10-01"
+        }
+      ],
+      "FACILITY": [
+        {
+          "FacilityID": "string",
+          "FacilityName": "string",
+          "ResourceLink": "string"
+        }
+      ],
+      "RECAREAADDRESS": [
+        {
+          "RecAreaAddressID": "857423",
+          "RecAreaID": "2820",
+          "RecAreaAddressType": "Mailing",
+          "RecAreaStreetAddress1": "12521 Lee Highway",
+          "RecAreaStreetAddress2": "",
+          "RecAreaStreetAddress3": "",
+          "City": "Manassas",
+          "PostalCode": "20109",
+          "AddressStateCode": "VA",
+          "AddressCountryCode": "USA",
+          "LastUpdatedDate": "2018-10-01"
+        }
+      ],
+      "ACTIVITY": [
+        {
+          "ActivityID": "string",
+          "ActivityParentID": "string",
+          "RecAreaID": "string",
+          "ActivityName": "string",
+          "RecAreaActivityDescription": "string",
+          "RecAreaActivityFeeDescription": "string"
+        }
+      ],
+      "EVENT": [
+        {
+          "EventID": "string",
+          "EventName": "string",
+          "ResourceLink": "string"
+        }
+      ],
+      "MEDIA": [
+        {
+          "EntityMediaID": "string",
+          "MediaType": "Image",
+          "EntityID": "string",
+          "EntityType": "string",
+          "Title": "string",
+          "Subtitle": "string",
+          "Description": "string",
+          "EmbedCode": "string",
+          "Height": 0,
+          "Width": 0,
+          "IsPrimary": true,
+          "IsPreview": true,
+          "IsGallery": true,
+          "URL": "string",
+          "Credits": "string"
+        }
+      ],
+      "LINK": [
+        {
+          "EntityLinkID": "string",
+          "LinkType": "string",
+          "EntityID": "string",
+          "EntityType": "string",
+          "Title": "string",
+          "Description": "string",
+          "URL": "string"
+        }
+      ]
+    }
+  ],
+```
+
 * Park Availability
 
 Campsite availability is a notorious thorn in the side of any camper, especially during the summer months. Parks that are fully occupied won't make a suitable destination for our would-be road trippers. Perhaps out of scope for our current project, but wanted to footnote it here. Various attempts have been made to programmatically scrape the various provincial parks reservations platforms for campsite availability, for example [here](https://www.cbc.ca/news/canada/british-columbia/savvy-coders-find-way-to-nab-coveted-b-c-camping-spots-1.6081267) or [here (closed source)](https://campnab.com/) or [here (closed source)](https://sitescout.ca/).
 
-* Google APIs are our friend.
+A student project (_Arunachalam et al._) used ML to identify which characteristics determined the popularity of a particular campground, based on site reservation data available from [RIDB](#recreation-dot-gov).
 
-(longer description and response examples will follow)
+* To be updated...
+1. Assemble a database of eligible camping areas with complete location/address information
+2. Given a known route, plot the best nearby campgrounds according to user-defined destination waypoints, with variable "nearby" threshold
+3. Output the itinerary and directions based on the selected destinations and duration (days).
+4. If this works filtered for one `trip_type` can it generate candidate itinerary filtered by selected `type` categories only, multi-`type`, or other more complex `type` filtering?
 
-1. [Places API - Find A Place](https://developers.google.com/maps/documentation/places/web-service/search-find-place#find-place-responses)
-2. [Place Details API](https://developers.google.com/maps/documentation/places/web-service/details) - Good when we want to add additional attractions by place `type` [parameter](https://developers.google.com/maps/documentation/places/web-service/supported_types#table1), such as `museum`, `art_gallery`, or `zoo`. Also supports reviews or `rating` as a way of marking how 'good' a particular attraction is.
-3. [Directions API - route from A to B to C](https://developers.google.com/maps/documentation/directions/get-directions)
-4. [Distance Matrix API - estimate travel time and distance for multiple destinations](https://developers.google.com/maps/documentation/distance-matrix/start) - on top of knowing the optimal route to get there, we need to understand how long the journey will take.
+# Related Work
+
+We reviewed other projects and resources that have previously done work in this domain. Some, but not all of them are linked below. Thanks to these authors!
+
+## Using Google Reviews Data
+
+Comparing Tourist Preferences in Asia and Europe (_Sam Childs and Vasanth Rajasekaran at UC Irvine_): <https://vasanth16.github.io/>
+Travel Review Analysis (_Wirach Leelakiatiwong_): <https://www.kaggle.com/code/wirachleelakiatiwong/travel-review-analysis>
+
+## Travel Recommendations with ML
+
+SmartTourister (_Salil Gautam, Shubham Verma, Nishant Gore_): https://github.com/salil-gtm/SmartTourister
+
+## Road Trip Route Optimization
+Optimizing Travel Itineraries With Machine Learning (Vladimir Lazovskiy): <https://github.com/vlazovskiy/route-optimizer-machine-learning>
+
+Computing Optimal Roadtrips on a Budget (_Randal Olson_): <https://github.com/rhiever/Data-Analysis-and-Machine-Learning-Projects/blob/master/pareto-optimized-road-trip/optimized-state-capitols-trip.ipynb>
+Optimal Road Trips Across the World (_Randy Olson_): >https://github.com/rhiever/optimal-roadtrip-usa>
+
+Road Trip Router (_Peter Sanders_): <https://github.com/hxtk/Road-Trip-Router>
+
+## APIs Reference
+
+Travel Advisor (_Adrian Hajdin_): <https://github.com/adrianhajdin/project_travel_advisor>
+Awesome Travel (<https://github.com/unseen1980/awesome-travel>)
+Tourism APIs <https://www.programmableweb.com/category/tourism/api>
+
+# Challenges
+
+["Here be dragons"].
+
+# Flex Goals
+
+## Preferences
+* Explore additional training data and compare the accuracy.
+* Input loop + retraining.
+* Maybe, post-trip the user rates each attraction /5 and that is used to re-weight their own assigned "rating"
+* Predicting ratings (can we replicate was was done by [Vasanth](https://vasanth16.github.io/#Part-6:-Predicting-Ratings) project?)
+
+## Recommendations
+* filter out/for place `type`(s)
+
+## Itinerary
+* multi-stop
+* multi-day
+* multi-route
+* time (driving hours/distance per day, time to stop at each attraction
+
+Can the suggested trip be completed in the allotted time?
+
+* time of day
+
+For eg. not all attractions can be visited at all times. Time of day / time of year may impact availability. Can use `opening_hours`
+```      "opening_hours":
+        {
+          "open_now": false,
+          "periods":
+            [
+              {
+                "close": { "day": 1, "time": "1700" },
+                "open": { "day": 1, "time": "0900" },
+              },
+              {
+                "close": { "day": 2, "time": "1700" },
+                "open": { "day": 2, "time": "0900" },
+              },
+              {
+                "close": { "day": 3, "time": "1700" },
+                "open": { "day": 3, "time": "0900" },
+              },
+              {
+                "close": { "day": 4, "time": "1700" },
+                "open": { "day": 4, "time": "0900" },
+              },
+              {
+                "close": { "day": 5, "time": "1700" },
+                "open": { "day": 5, "time": "0900" },
+              },
+            ],
+          "weekday_text":
+            [
+              "Monday: 9:00 AM – 5:00 PM",
+              "Tuesday: 9:00 AM – 5:00 PM",
+              "Wednesday: 9:00 AM – 5:00 PM",
+              "Thursday: 9:00 AM – 5:00 PM",
+              "Friday: 9:00 AM – 5:00 PM",
+              "Saturday: Closed",
+              "Sunday: Closed",
+            ],
+        },
+```
+
+## Budget
+* filter by $/5, free trips only, etc. Can use `price_level` from 0 to 5 (<https://developers.google.com/maps/documentation/places/web-service/search-nearby#Place-price_level>)
+* gas costs? (vehicle type?)
