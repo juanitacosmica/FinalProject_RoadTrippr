@@ -1,3 +1,0 @@
-# FinalProject_RoadTrippr
-
-Testing

@@ -5,12 +5,12 @@
     <meta charset="utf-8">
     <meta name="keywords" content="Who are you?">
     <meta name="description" content="">
-    <meta name="page_type" content="np-template-header-footer-from-plugin">
+    <meta name="page_type" content="np-template-header-footer-from-plugin ">
     <title>userinformation</title>
-    <link rel="stylesheet" href="style.css" media="screen">
-<link rel="stylesheet" href="userinformation.css" media="screen">
-    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
-    <script class="u-script" type="text/javascript" src="style.js" defer=""></script>
+    <link rel="stylesheet" href="../style.css" media="screen">
+    <link rel="stylesheet" href="userinformation.css" media="screen">
+    <script class="u-script" type="text/javascript" src="../jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="../style.js" defer=""></script>
     <meta name="generator">
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
     <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i">
@@ -20,7 +20,7 @@
 		"@context": "http://schema.org",
 		"@type": "Organization",
 		"name": "",
-		"logo": "images/logo.png"
+		"logo": "../images/logo.png"
 }</script>
     <meta name="theme-color" content="#478ac9">
     <meta property="og:title" content="userinformation">
@@ -28,7 +28,7 @@
   </head>
   <body class="u-body u-xl-mode"><header class="u-clearfix u-custom-color-1 u-header u-header" id="sec-3aad"><div class="u-clearfix u-sheet u-sheet-1">
         <a href="#" class="u-image u-logo u-image-1" data-image-width="292" data-image-height="68">
-          <img src="images/logo.png" class="u-logo-image u-logo-image-1">
+          <img src="../images/logo.png" class="u-logo-image u-logo-image-1">
         </a>
         <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1">
           <div class="menu-collapse" style="font-size: 1rem; letter-spacing: 0px;">
@@ -66,7 +66,7 @@
           <div class="u-layout-row">
             <div class="u-align-left u-container-style u-custom-color-1 u-layout-cell u-right-cell u-size-30 u-layout-cell-1">
               <div class="u-container-layout u-valign-middle-xl u-container-layout-1">
-                <img class="u-expanded-width-xl u-hidden-xs u-image u-image-default u-image-1" src="images/travel-globe.png" alt="" data-image-width="771" data-image-height="839">
+                <img class="u-expanded-width-xl u-hidden-xs u-image u-image-default u-image-1" src="../images/travel-globe.png" alt="" data-image-width="771" data-image-height="839">
               </div>
             </div>
             <div class="u-align-left u-container-style u-custom-color-1 u-layout-cell u-left-cell u-size-30 u-layout-cell-2">
@@ -81,11 +81,19 @@
                     </div>
                     <div class="u-form-group u-form-name u-form-group-2">
                       <label for="name-3c4e" class="u-label u-text-palette-2-base u-label-2" wfd-invisible="true">Last Name</label>
-                      <input type="text" placeholder="Enter your last name" id="lname" name="lname" class="u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-white u-input u-input-rectangle u-input-2" required="">
+                      <input type="text" placeholder="enter your last name" id="lname" name="lname" class="u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-white u-input u-input-rectangle u-input-2" required="">
+                    </div>
+                    <div class="u-form-group u-form-name u-form-group-2">
+                      <label for="name-3c4e" class="u-label u-text-palette-2-base u-label-2" wfd-invisible="true">Gender</label>
+                      <input type="text" placeholder="enter your gender" id="gender" name="gender" class="u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-white u-input u-input-rectangle u-input-2" required="">
+                    </div>
+                    <div class="u-form-group u-form-name u-form-group-2">
+                      <label for="name-3c4e" class="u-label u-text-palette-2-base u-label-2" wfd-invisible="true">Gender</label>
+                      <input type="text" placeholder="enter your gender" id="gender" name="gender" class="u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-white u-input u-input-rectangle u-input-2" required="">
                     </div>
                     <div class="u-form-group u-form-name u-form-group-2">
                       <label for="name-3c4e" class="u-label u-text-palette-2-base u-label-2" wfd-invisible="true">City</label>
-                      <input type="text" placeholder="Enter your city name" id="city" name="city" class="u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-white u-input u-input-rectangle u-input-2" required="">
+                      <input type="text" placeholder="enter your city name" id="city" name="city" class="u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-white u-input u-input-rectangle u-input-2" required="">
                     </div>
                     <div class="u-align-left u-form-group u-form-submit">
                       <a href="#" class="u-border-none u-btn u-btn-round u-btn-submit u-button-style u-palette-2-base u-radius-50 u-btn-1">Submit</a>
@@ -107,10 +115,7 @@
       // Import the functions you need from the SDKs you need
       import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-app.js";
       import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-database.js";
-      import { getAuth, 
-              createUserWithEmailAndPassword, 
-              onAuthStateChanged 
-            } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-auth.js";
+      import { getAuth, createUserWithEmailAndPassword, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-auth.js";
 
       import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-analytics.js";
       // TODO: Add SDKs for Firebase products that you want to use
@@ -151,15 +156,17 @@
               firstname: fname,
               lastname: lname,
               city: city
-            });
-        }else {
+          });
+
+        var delayInMilliseconds = 1000; //1 second
+        setTimeout(function() {
+          window.location.href = '../questionaire/questionaire.html'
+        }, delayInMilliseconds);
+        
+      }else {
           alert("wrong");
         }
 
-        var delayInMilliseconds = 5000; //5 second
-        setTimeout(function() {
-          window.location.href = 'questionaire.html';
-        }, delayInMilliseconds);
       });
     </script>
   </body>
