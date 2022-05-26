@@ -13,25 +13,30 @@ ClusterAvgValues = ClusterAvgValues.drop('Unnamed: 0', 1)
 
 # function to roll 1 activity, 1 sightseeing, 1 food according to cluster
 
+def roll_trip():
+    # need to pass cluster value here from user profile
+    cluster = 0
 
+    # roll an activity
+    activity = list(ClusterAvgValues[['resorts', 'beaches', 'parks', 'theatres', 'museums', 'malls', 'zoo', 'art-galleries', 'dance-clubs', 'swimming-pools', 'gyms', 'beauty-spas']])
+    activity_weights = np.array(ClusterAvgValues[['resorts', 'beaches', 'parks', 'theatres', 'museums', 'malls', 'zoo', 'art-galleries', 'dance-clubs', 'swimming-pools', 'gyms', 'beauty-spas']])
+    cl_act_weights = activity_weights[cluster]
+    normalized_act = cl_act_weights / cl_act_weights.sum()
+    act_choice = choice(activity, p=normalized_act)
 
-# roll an activity
-activity = list(ClusterAvgValues[['resorts', 'beaches', 'parks', 'theatres', 'museums', 'malls', 'zoo', 'art-galleries', 'dance-clubs', 'swimming-pools', 'gyms', 'beauty-spas']])
-activity_weights = np.array(ClusterAvgValues[['resorts', 'beaches', 'parks', 'theatres', 'museums', 'malls', 'zoo', 'art-galleries', 'dance-clubs', 'swimming-pools', 'gyms', 'beauty-spas']])
-cl0_act_weights = activity_weights[0]
-normalized_cl1 = cl0_act_weights / cl0_act_weights.sum()
-choice(activity, p=normalized_cl1)
+    # roll a sightseeing
+    sightseeing = list(ClusterAvgValues[['churches', 'view-points', 'monuments', 'gardens']])
+    sightseeing_weights = np.array(ClusterAvgValues[['churches', 'view-points', 'monuments', 'gardens']])
+    cl_sight_weights = sightseeing_weights[cluster]
+    normalized_sight = cl_sight_weights / cl_sight_weights.sum()
+    sight_choice = choice(sightseeing, p=normalized_sight)
 
-# roll a sightseeing
-sightseeing = list(ClusterAvgValues[['churches', 'view-points', 'monuments', 'gardens']])
-sightseeing_weights = np.array(ClusterAvgValues[['churches', 'view-points', 'monuments', 'gardens']])
-cl0_sight_weights = sightseeing_weights[0]
-normalized_cl0_sight = cl0_sight_weights / cl0_sight_weights.sum()
-choice(sightseeing, p=normalized_cl0_sight)
+    # roll food&drink
+    food = list(ClusterAvgValues[['restaurants', 'pubs-bars', 'burger-pizza', 'juice-bars', 'bakeries', 'cafes']])
+    food_weights = np.array(ClusterAvgValues[['restaurants', 'pubs-bars', 'burger-pizza', 'juice-bars', 'bakeries', 'cafes']])
+    cl_food_weights = food_weights[cluster]
+    normalized_food = cl_food_weights / cl_food_weights.sum()
+    food_choice = choice(food, p=normalized_food)
 
-# roll food&drink
-food = list(ClusterAvgValues[['restaurants', 'pubs-bars', 'burger-pizza', 'juice-bars', 'bakeries', 'cafes']])
-food_weights = np.array(ClusterAvgValues[['restaurants', 'pubs-bars', 'burger-pizza', 'juice-bars', 'bakeries', 'cafes']])
-cl0_food_weights = food_weights[0]
-normalized_cl0_food = cl0_food_weights / cl0_food_weights.sum()
-choice(food, p=normalized_cl0_food)
+    trip_types = [act_choice, sight_choice, food_choice]
+    return trip_types
