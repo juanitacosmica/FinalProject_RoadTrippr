@@ -11,9 +11,27 @@ ClusterAvgValues = pd.read_csv('recommendation_engine/Output/weights.csv')
 print(ClusterAvgValues.columns)
 ClusterAvgValues = ClusterAvgValues.drop('Unnamed: 0', 1)
 
+# function to roll 1 activity, 1 sightseeing, 1 food according to cluster
+
+
+
 # roll an activity
-activities = list(ClusterAvgValues[['resorts', 'beaches', 'parks', 'theatres', 'museums', 'malls', 'zoo', 'art-galleries', 'dance-clubs', 'swimming-pools', 'gyms', 'beauty-spas']])
+activity = list(ClusterAvgValues[['resorts', 'beaches', 'parks', 'theatres', 'museums', 'malls', 'zoo', 'art-galleries', 'dance-clubs', 'swimming-pools', 'gyms', 'beauty-spas']])
 activity_weights = np.array(ClusterAvgValues[['resorts', 'beaches', 'parks', 'theatres', 'museums', 'malls', 'zoo', 'art-galleries', 'dance-clubs', 'swimming-pools', 'gyms', 'beauty-spas']])
-cl1_act_weights = activity_weights[0]
-normalized_cl1 = cl1_act_weights / cl1_act_weights.sum()
-choice(activities, p=normalized_cl1)
+cl0_act_weights = activity_weights[0]
+normalized_cl1 = cl0_act_weights / cl0_act_weights.sum()
+choice(activity, p=normalized_cl1)
+
+# roll a sightseeing
+sightseeing = list(ClusterAvgValues[['churches', 'view-points', 'monuments', 'gardens']])
+sightseeing_weights = np.array(ClusterAvgValues[['churches', 'view-points', 'monuments', 'gardens']])
+cl0_sight_weights = sightseeing_weights[0]
+normalized_cl0_sight = cl0_sight_weights / cl0_sight_weights.sum()
+choice(sightseeing, p=normalized_cl0_sight)
+
+# roll food&drink
+food = list(ClusterAvgValues[['restaurants', 'pubs-bars', 'burger-pizza', 'juice-bars', 'bakeries', 'cafes']])
+food_weights = np.array(ClusterAvgValues[['restaurants', 'pubs-bars', 'burger-pizza', 'juice-bars', 'bakeries', 'cafes']])
+cl0_food_weights = food_weights[0]
+normalized_cl0_food = cl0_food_weights / cl0_food_weights.sum()
+choice(food, p=normalized_cl0_food)
