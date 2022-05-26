@@ -1,1101 +1,1101 @@
-Category,Question,Question_Scale,Value,,Unique Key = Category + Question + Question_Scale
-resorts ,Q1,1,0,,
-resorts ,Q1,2,1,,
-resorts ,Q1,3,1,,
-resorts ,Q1,4,1,,
-resorts ,Q1,5,1,,
-resorts ,Q2,1,0,,
-resorts ,Q2,2,1,,
-resorts ,Q2,3,0,,
-resorts ,Q2,4,0,,
-resorts ,Q2,5,1,,
-resorts ,Q3,1,1,,
-resorts ,Q3,2,1,,
-resorts ,Q3,3,0,,
-resorts ,Q3,4,0,,
-resorts ,Q3,5,0,,
-resorts ,Q4,1,1,,
-resorts ,Q4,2,1,,
-resorts ,Q4,3,1,,
-resorts ,Q4,4,1,,
-resorts ,Q4,5,1,,
-resorts ,Q5,1,0,,
-resorts ,Q5,2,0,,
-resorts ,Q5,3,1,,
-resorts ,Q5,4,0,,
-resorts ,Q5,5,0,,
-resorts ,Q6,1,1,,
-resorts ,Q6,2,1,,
-resorts ,Q6,3,1,,
-resorts ,Q6,4,0,,
-resorts ,Q6,5,0,,
-resorts ,Q7,1,0,,
-resorts ,Q7,2,0,,
-resorts ,Q7,3,1,,
-resorts ,Q7,4,1,,
-resorts ,Q7,5,1,,
-resorts ,Q8,1,0,,
-resorts ,Q8,2,0,,
-resorts ,Q8,3,0,,
-resorts ,Q8,4,0,,
-resorts ,Q8,5,0,,
-resorts ,Q9,1,1,,
-resorts ,Q9,2,1,,
-resorts ,Q9,3,1,,
-resorts ,Q9,4,1,,
-resorts ,Q9,5,0,,
-resorts ,Q10,1,0,,
-resorts ,Q10,2,1,,
-resorts ,Q10,3,0,,
-resorts ,Q10,4,1,,
-resorts ,Q10,5,0,,
-churches ,Q1,1,1,,
-churches ,Q1,2,0,,
-churches ,Q1,3,1,,
-churches ,Q1,4,1,,
-churches ,Q1,5,1,,
-churches ,Q2,1,0,,
-churches ,Q2,2,1,,
-churches ,Q2,3,1,,
-churches ,Q2,4,1,,
-churches ,Q2,5,0,,
-churches ,Q3,1,0,,
-churches ,Q3,2,1,,
-churches ,Q3,3,1,,
-churches ,Q3,4,0,,
-churches ,Q3,5,1,,
-churches ,Q4,1,0,,
-churches ,Q4,2,1,,
-churches ,Q4,3,1,,
-churches ,Q4,4,1,,
-churches ,Q4,5,1,,
-churches ,Q5,1,1,,
-churches ,Q5,2,1,,
-churches ,Q5,3,1,,
-churches ,Q5,4,0,,
-churches ,Q5,5,0,,
-churches ,Q6,1,1,,
-churches ,Q6,2,1,,
-churches ,Q6,3,1,,
-churches ,Q6,4,1,,
-churches ,Q6,5,1,,
-churches ,Q7,1,1,,
-churches ,Q7,2,0,,
-churches ,Q7,3,1,,
-churches ,Q7,4,1,,
-churches ,Q7,5,1,,
-churches ,Q8,1,1,,
-churches ,Q8,2,1,,
-churches ,Q8,3,0,,
-churches ,Q8,4,1,,
-churches ,Q8,5,0,,
-churches ,Q9,1,1,,
-churches ,Q9,2,0,,
-churches ,Q9,3,1,,
-churches ,Q9,4,0,,
-churches ,Q9,5,1,,
-churches ,Q10,1,1,,
-churches ,Q10,2,1,,
-churches ,Q10,3,1,,
-churches ,Q10,4,0,,
-churches ,Q10,5,0,,
-dance clubs ,Q1,1,1,,
-dance clubs ,Q1,2,0,,
-dance clubs ,Q1,3,1,,
-dance clubs ,Q1,4,0,,
-dance clubs ,Q1,5,1,,
-dance clubs ,Q2,1,1,,
-dance clubs ,Q2,2,1,,
-dance clubs ,Q2,3,1,,
-dance clubs ,Q2,4,1,,
-dance clubs ,Q2,5,1,,
-dance clubs ,Q3,1,0,,
-dance clubs ,Q3,2,0,,
-dance clubs ,Q3,3,1,,
-dance clubs ,Q3,4,0,,
-dance clubs ,Q3,5,1,,
-dance clubs ,Q4,1,1,,
-dance clubs ,Q4,2,0,,
-dance clubs ,Q4,3,1,,
-dance clubs ,Q4,4,1,,
-dance clubs ,Q4,5,1,,
-dance clubs ,Q5,1,1,,
-dance clubs ,Q5,2,1,,
-dance clubs ,Q5,3,0,,
-dance clubs ,Q5,4,1,,
-dance clubs ,Q5,5,1,,
-dance clubs ,Q6,1,0,,
-dance clubs ,Q6,2,1,,
-dance clubs ,Q6,3,1,,
-dance clubs ,Q6,4,0,,
-dance clubs ,Q6,5,1,,
-dance clubs ,Q7,1,1,,
-dance clubs ,Q7,2,1,,
-dance clubs ,Q7,3,1,,
-dance clubs ,Q7,4,1,,
-dance clubs ,Q7,5,1,,
-dance clubs ,Q8,1,1,,
-dance clubs ,Q8,2,1,,
-dance clubs ,Q8,3,0,,
-dance clubs ,Q8,4,0,,
-dance clubs ,Q8,5,1,,
-dance clubs ,Q9,1,1,,
-dance clubs ,Q9,2,0,,
-dance clubs ,Q9,3,0,,
-dance clubs ,Q9,4,0,,
-dance clubs ,Q9,5,0,,
-dance clubs ,Q10,1,0,,
-dance clubs ,Q10,2,0,,
-dance clubs ,Q10,3,0,,
-dance clubs ,Q10,4,0,,
-dance clubs ,Q10,5,1,,
-art galleries ,Q1,1,1,,
-art galleries ,Q1,2,1,,
-art galleries ,Q1,3,0,,
-art galleries ,Q1,4,1,,
-art galleries ,Q1,5,0,,
-art galleries ,Q2,1,1,,
-art galleries ,Q2,2,0,,
-art galleries ,Q2,3,1,,
-art galleries ,Q2,4,0,,
-art galleries ,Q2,5,0,,
-art galleries ,Q3,1,0,,
-art galleries ,Q3,2,1,,
-art galleries ,Q3,3,1,,
-art galleries ,Q3,4,0,,
-art galleries ,Q3,5,1,,
-art galleries ,Q4,1,1,,
-art galleries ,Q4,2,1,,
-art galleries ,Q4,3,1,,
-art galleries ,Q4,4,0,,
-art galleries ,Q4,5,1,,
-art galleries ,Q5,1,0,,
-art galleries ,Q5,2,0,,
-art galleries ,Q5,3,1,,
-art galleries ,Q5,4,0,,
-art galleries ,Q5,5,0,,
-art galleries ,Q6,1,0,,
-art galleries ,Q6,2,1,,
-art galleries ,Q6,3,0,,
-art galleries ,Q6,4,0,,
-art galleries ,Q6,5,0,,
-art galleries ,Q7,1,0,,
-art galleries ,Q7,2,0,,
-art galleries ,Q7,3,1,,
-art galleries ,Q7,4,1,,
-art galleries ,Q7,5,1,,
-art galleries ,Q8,1,1,,
-art galleries ,Q8,2,1,,
-art galleries ,Q8,3,0,,
-art galleries ,Q8,4,0,,
-art galleries ,Q8,5,1,,
-art galleries ,Q9,1,1,,
-art galleries ,Q9,2,1,,
-art galleries ,Q9,3,1,,
-art galleries ,Q9,4,0,,
-art galleries ,Q9,5,0,,
-art galleries ,Q10,1,0,,
-art galleries ,Q10,2,0,,
-art galleries ,Q10,3,1,,
-art galleries ,Q10,4,0,,
-art galleries ,Q10,5,0,,
-theatres ,Q1,1,1,,
-theatres ,Q1,2,0,,
-theatres ,Q1,3,0,,
-theatres ,Q1,4,1,,
-theatres ,Q1,5,1,,
-theatres ,Q2,1,1,,
-theatres ,Q2,2,1,,
-theatres ,Q2,3,0,,
-theatres ,Q2,4,0,,
-theatres ,Q2,5,1,,
-theatres ,Q3,1,0,,
-theatres ,Q3,2,1,,
-theatres ,Q3,3,1,,
-theatres ,Q3,4,0,,
-theatres ,Q3,5,1,,
-theatres ,Q4,1,0,,
-theatres ,Q4,2,0,,
-theatres ,Q4,3,0,,
-theatres ,Q4,4,1,,
-theatres ,Q4,5,1,,
-theatres ,Q5,1,1,,
-theatres ,Q5,2,0,,
-theatres ,Q5,3,1,,
-theatres ,Q5,4,1,,
-theatres ,Q5,5,1,,
-theatres ,Q6,1,1,,
-theatres ,Q6,2,0,,
-theatres ,Q6,3,1,,
-theatres ,Q6,4,1,,
-theatres ,Q6,5,1,,
-theatres ,Q7,1,1,,
-theatres ,Q7,2,0,,
-theatres ,Q7,3,0,,
-theatres ,Q7,4,1,,
-theatres ,Q7,5,1,,
-theatres ,Q8,1,0,,
-theatres ,Q8,2,1,,
-theatres ,Q8,3,0,,
-theatres ,Q8,4,0,,
-theatres ,Q8,5,1,,
-theatres ,Q9,1,1,,
-theatres ,Q9,2,0,,
-theatres ,Q9,3,1,,
-theatres ,Q9,4,0,,
-theatres ,Q9,5,1,,
-theatres ,Q10,1,0,,
-theatres ,Q10,2,1,,
-theatres ,Q10,3,0,,
-theatres ,Q10,4,1,,
-theatres ,Q10,5,1,,
-museums ,Q1,1,1,,
-museums ,Q1,2,0,,
-museums ,Q1,3,1,,
-museums ,Q1,4,1,,
-museums ,Q1,5,0,,
-museums ,Q2,1,0,,
-museums ,Q2,2,1,,
-museums ,Q2,3,1,,
-museums ,Q2,4,0,,
-museums ,Q2,5,1,,
-museums ,Q3,1,0,,
-museums ,Q3,2,1,,
-museums ,Q3,3,1,,
-museums ,Q3,4,1,,
-museums ,Q3,5,1,,
-museums ,Q4,1,1,,
-museums ,Q4,2,1,,
-museums ,Q4,3,1,,
-museums ,Q4,4,0,,
-museums ,Q4,5,0,,
-museums ,Q5,1,0,,
-museums ,Q5,2,0,,
-museums ,Q5,3,0,,
-museums ,Q5,4,0,,
-museums ,Q5,5,1,,
-museums ,Q6,1,0,,
-museums ,Q6,2,0,,
-museums ,Q6,3,0,,
-museums ,Q6,4,0,,
-museums ,Q6,5,0,,
-museums ,Q7,1,1,,
-museums ,Q7,2,0,,
-museums ,Q7,3,1,,
-museums ,Q7,4,1,,
-museums ,Q7,5,0,,
-museums ,Q8,1,1,,
-museums ,Q8,2,1,,
-museums ,Q8,3,0,,
-museums ,Q8,4,0,,
-museums ,Q8,5,1,,
-museums ,Q9,1,0,,
-museums ,Q9,2,0,,
-museums ,Q9,3,1,,
-museums ,Q9,4,0,,
-museums ,Q9,5,0,,
-museums ,Q10,1,1,,
-museums ,Q10,2,0,,
-museums ,Q10,3,0,,
-museums ,Q10,4,1,,
-museums ,Q10,5,1,,
-zoo ,Q1,1,1,,
-zoo ,Q1,2,1,,
-zoo ,Q1,3,0,,
-zoo ,Q1,4,1,,
-zoo ,Q1,5,1,,
-zoo ,Q2,1,1,,
-zoo ,Q2,2,0,,
-zoo ,Q2,3,1,,
-zoo ,Q2,4,1,,
-zoo ,Q2,5,0,,
-zoo ,Q3,1,1,,
-zoo ,Q3,2,1,,
-zoo ,Q3,3,1,,
-zoo ,Q3,4,1,,
-zoo ,Q3,5,1,,
-zoo ,Q4,1,1,,
-zoo ,Q4,2,0,,
-zoo ,Q4,3,1,,
-zoo ,Q4,4,1,,
-zoo ,Q4,5,0,,
-zoo ,Q5,1,0,,
-zoo ,Q5,2,0,,
-zoo ,Q5,3,1,,
-zoo ,Q5,4,1,,
-zoo ,Q5,5,0,,
-zoo ,Q6,1,0,,
-zoo ,Q6,2,0,,
-zoo ,Q6,3,1,,
-zoo ,Q6,4,0,,
-zoo ,Q6,5,0,,
-zoo ,Q7,1,0,,
-zoo ,Q7,2,1,,
-zoo ,Q7,3,0,,
-zoo ,Q7,4,1,,
-zoo ,Q7,5,1,,
-zoo ,Q8,1,0,,
-zoo ,Q8,2,0,,
-zoo ,Q8,3,1,,
-zoo ,Q8,4,1,,
-zoo ,Q8,5,1,,
-zoo ,Q9,1,1,,
-zoo ,Q9,2,1,,
-zoo ,Q9,3,1,,
-zoo ,Q9,4,0,,
-zoo ,Q9,5,1,,
-zoo ,Q10,1,0,,
-zoo ,Q10,2,0,,
-zoo ,Q10,3,1,,
-zoo ,Q10,4,0,,
-zoo ,Q10,5,1,,
-swimming pools ,Q1,1,0,,
-swimming pools ,Q1,2,0,,
-swimming pools ,Q1,3,1,,
-swimming pools ,Q1,4,1,,
-swimming pools ,Q1,5,0,,
-swimming pools ,Q2,1,1,,
-swimming pools ,Q2,2,0,,
-swimming pools ,Q2,3,1,,
-swimming pools ,Q2,4,0,,
-swimming pools ,Q2,5,0,,
-swimming pools ,Q3,1,1,,
-swimming pools ,Q3,2,1,,
-swimming pools ,Q3,3,1,,
-swimming pools ,Q3,4,0,,
-swimming pools ,Q3,5,0,,
-swimming pools ,Q4,1,0,,
-swimming pools ,Q4,2,1,,
-swimming pools ,Q4,3,1,,
-swimming pools ,Q4,4,0,,
-swimming pools ,Q4,5,0,,
-swimming pools ,Q5,1,1,,
-swimming pools ,Q5,2,1,,
-swimming pools ,Q5,3,0,,
-swimming pools ,Q5,4,0,,
-swimming pools ,Q5,5,1,,
-swimming pools ,Q6,1,1,,
-swimming pools ,Q6,2,0,,
-swimming pools ,Q6,3,1,,
-swimming pools ,Q6,4,0,,
-swimming pools ,Q6,5,1,,
-swimming pools ,Q7,1,1,,
-swimming pools ,Q7,2,1,,
-swimming pools ,Q7,3,1,,
-swimming pools ,Q7,4,1,,
-swimming pools ,Q7,5,1,,
-swimming pools ,Q8,1,1,,
-swimming pools ,Q8,2,0,,
-swimming pools ,Q8,3,1,,
-swimming pools ,Q8,4,0,,
-swimming pools ,Q8,5,0,,
-swimming pools ,Q9,1,0,,
-swimming pools ,Q9,2,0,,
-swimming pools ,Q9,3,1,,
-swimming pools ,Q9,4,1,,
-swimming pools ,Q9,5,1,,
-swimming pools ,Q10,1,1,,
-swimming pools ,Q10,2,1,,
-swimming pools ,Q10,3,0,,
-swimming pools ,Q10,4,0,,
-swimming pools ,Q10,5,0,,
-view points ,Q1,1,0,,
-view points ,Q1,2,0,,
-view points ,Q1,3,0,,
-view points ,Q1,4,1,,
-view points ,Q1,5,0,,
-view points ,Q2,1,0,,
-view points ,Q2,2,0,,
-view points ,Q2,3,0,,
-view points ,Q2,4,0,,
-view points ,Q2,5,0,,
-view points ,Q3,1,0,,
-view points ,Q3,2,1,,
-view points ,Q3,3,1,,
-view points ,Q3,4,0,,
-view points ,Q3,5,1,,
-view points ,Q4,1,1,,
-view points ,Q4,2,1,,
-view points ,Q4,3,1,,
-view points ,Q4,4,1,,
-view points ,Q4,5,0,,
-view points ,Q5,1,0,,
-view points ,Q5,2,0,,
-view points ,Q5,3,0,,
-view points ,Q5,4,0,,
-view points ,Q5,5,1,,
-view points ,Q6,1,1,,
-view points ,Q6,2,0,,
-view points ,Q6,3,1,,
-view points ,Q6,4,0,,
-view points ,Q6,5,1,,
-view points ,Q7,1,0,,
-view points ,Q7,2,0,,
-view points ,Q7,3,0,,
-view points ,Q7,4,1,,
-view points ,Q7,5,1,,
-view points ,Q8,1,1,,
-view points ,Q8,2,1,,
-view points ,Q8,3,1,,
-view points ,Q8,4,1,,
-view points ,Q8,5,0,,
-view points ,Q9,1,0,,
-view points ,Q9,2,1,,
-view points ,Q9,3,1,,
-view points ,Q9,4,1,,
-view points ,Q9,5,1,,
-view points ,Q10,1,0,,
-view points ,Q10,2,0,,
-view points ,Q10,3,1,,
-view points ,Q10,4,0,,
-view points ,Q10,5,0,,
-beaches ,Q1,1,0,,
-beaches ,Q1,2,0,,
-beaches ,Q1,3,0,,
-beaches ,Q1,4,0,,
-beaches ,Q1,5,1,,
-beaches ,Q2,1,1,,
-beaches ,Q2,2,1,,
-beaches ,Q2,3,1,,
-beaches ,Q2,4,1,,
-beaches ,Q2,5,0,,
-beaches ,Q3,1,0,,
-beaches ,Q3,2,1,,
-beaches ,Q3,3,1,,
-beaches ,Q3,4,0,,
-beaches ,Q3,5,0,,
-beaches ,Q4,1,0,,
-beaches ,Q4,2,1,,
-beaches ,Q4,3,1,,
-beaches ,Q4,4,0,,
-beaches ,Q4,5,1,,
-beaches ,Q5,1,1,,
-beaches ,Q5,2,1,,
-beaches ,Q5,3,0,,
-beaches ,Q5,4,0,,
-beaches ,Q5,5,0,,
-beaches ,Q6,1,1,,
-beaches ,Q6,2,0,,
-beaches ,Q6,3,1,,
-beaches ,Q6,4,1,,
-beaches ,Q6,5,1,,
-beaches ,Q7,1,1,,
-beaches ,Q7,2,1,,
-beaches ,Q7,3,0,,
-beaches ,Q7,4,0,,
-beaches ,Q7,5,1,,
-beaches ,Q8,1,1,,
-beaches ,Q8,2,1,,
-beaches ,Q8,3,1,,
-beaches ,Q8,4,1,,
-beaches ,Q8,5,0,,
-beaches ,Q9,1,0,,
-beaches ,Q9,2,1,,
-beaches ,Q9,3,0,,
-beaches ,Q9,4,1,,
-beaches ,Q9,5,0,,
-beaches ,Q10,1,0,,
-beaches ,Q10,2,0,,
-beaches ,Q10,3,1,,
-beaches ,Q10,4,0,,
-beaches ,Q10,5,1,,
-malls ,Q1,1,1,,
-malls ,Q1,2,0,,
-malls ,Q1,3,1,,
-malls ,Q1,4,0,,
-malls ,Q1,5,1,,
-malls ,Q2,1,1,,
-malls ,Q2,2,1,,
-malls ,Q2,3,0,,
-malls ,Q2,4,0,,
-malls ,Q2,5,0,,
-malls ,Q3,1,1,,
-malls ,Q3,2,0,,
-malls ,Q3,3,1,,
-malls ,Q3,4,1,,
-malls ,Q3,5,1,,
-malls ,Q4,1,0,,
-malls ,Q4,2,1,,
-malls ,Q4,3,1,,
-malls ,Q4,4,1,,
-malls ,Q4,5,0,,
-malls ,Q5,1,1,,
-malls ,Q5,2,1,,
-malls ,Q5,3,1,,
-malls ,Q5,4,0,,
-malls ,Q5,5,1,,
-malls ,Q6,1,0,,
-malls ,Q6,2,1,,
-malls ,Q6,3,1,,
-malls ,Q6,4,0,,
-malls ,Q6,5,1,,
-malls ,Q7,1,1,,
-malls ,Q7,2,0,,
-malls ,Q7,3,1,,
-malls ,Q7,4,0,,
-malls ,Q7,5,1,,
-malls ,Q8,1,1,,
-malls ,Q8,2,0,,
-malls ,Q8,3,0,,
-malls ,Q8,4,0,,
-malls ,Q8,5,1,,
-malls ,Q9,1,0,,
-malls ,Q9,2,0,,
-malls ,Q9,3,0,,
-malls ,Q9,4,1,,
-malls ,Q9,5,1,,
-malls ,Q10,1,0,,
-malls ,Q10,2,1,,
-malls ,Q10,3,1,,
-malls ,Q10,4,1,,
-malls ,Q10,5,0,,
-gyms ,Q1,1,0,,
-gyms ,Q1,2,1,,
-gyms ,Q1,3,1,,
-gyms ,Q1,4,0,,
-gyms ,Q1,5,1,,
-gyms ,Q2,1,0,,
-gyms ,Q2,2,0,,
-gyms ,Q2,3,1,,
-gyms ,Q2,4,1,,
-gyms ,Q2,5,0,,
-gyms ,Q3,1,0,,
-gyms ,Q3,2,1,,
-gyms ,Q3,3,1,,
-gyms ,Q3,4,1,,
-gyms ,Q3,5,0,,
-gyms ,Q4,1,0,,
-gyms ,Q4,2,1,,
-gyms ,Q4,3,0,,
-gyms ,Q4,4,0,,
-gyms ,Q4,5,1,,
-gyms ,Q5,1,1,,
-gyms ,Q5,2,0,,
-gyms ,Q5,3,1,,
-gyms ,Q5,4,1,,
-gyms ,Q5,5,1,,
-gyms ,Q6,1,1,,
-gyms ,Q6,2,1,,
-gyms ,Q6,3,1,,
-gyms ,Q6,4,1,,
-gyms ,Q6,5,0,,
-gyms ,Q7,1,0,,
-gyms ,Q7,2,0,,
-gyms ,Q7,3,0,,
-gyms ,Q7,4,1,,
-gyms ,Q7,5,1,,
-gyms ,Q8,1,0,,
-gyms ,Q8,2,0,,
-gyms ,Q8,3,1,,
-gyms ,Q8,4,1,,
-gyms ,Q8,5,1,,
-gyms ,Q9,1,0,,
-gyms ,Q9,2,1,,
-gyms ,Q9,3,1,,
-gyms ,Q9,4,0,,
-gyms ,Q9,5,1,,
-gyms ,Q10,1,0,,
-gyms ,Q10,2,1,,
-gyms ,Q10,3,0,,
-gyms ,Q10,4,0,,
-gyms ,Q10,5,0,,
-monuments ,Q1,1,1,,
-monuments ,Q1,2,1,,
-monuments ,Q1,3,1,,
-monuments ,Q1,4,0,,
-monuments ,Q1,5,0,,
-monuments ,Q2,1,0,,
-monuments ,Q2,2,0,,
-monuments ,Q2,3,0,,
-monuments ,Q2,4,1,,
-monuments ,Q2,5,1,,
-monuments ,Q3,1,0,,
-monuments ,Q3,2,0,,
-monuments ,Q3,3,1,,
-monuments ,Q3,4,0,,
-monuments ,Q3,5,1,,
-monuments ,Q4,1,1,,
-monuments ,Q4,2,0,,
-monuments ,Q4,3,1,,
-monuments ,Q4,4,1,,
-monuments ,Q4,5,1,,
-monuments ,Q5,1,0,,
-monuments ,Q5,2,1,,
-monuments ,Q5,3,0,,
-monuments ,Q5,4,0,,
-monuments ,Q5,5,0,,
-monuments ,Q6,1,0,,
-monuments ,Q6,2,0,,
-monuments ,Q6,3,0,,
-monuments ,Q6,4,1,,
-monuments ,Q6,5,0,,
-monuments ,Q7,1,0,,
-monuments ,Q7,2,1,,
-monuments ,Q7,3,1,,
-monuments ,Q7,4,0,,
-monuments ,Q7,5,1,,
-monuments ,Q8,1,0,,
-monuments ,Q8,2,0,,
-monuments ,Q8,3,0,,
-monuments ,Q8,4,1,,
-monuments ,Q8,5,0,,
-monuments ,Q9,1,1,,
-monuments ,Q9,2,0,,
-monuments ,Q9,3,1,,
-monuments ,Q9,4,0,,
-monuments ,Q9,5,1,,
-monuments ,Q10,1,1,,
-monuments ,Q10,2,1,,
-monuments ,Q10,3,1,,
-monuments ,Q10,4,1,,
-monuments ,Q10,5,0,,
-gardens,Q1,1,0,,
-gardens,Q1,2,1,,
-gardens,Q1,3,1,,
-gardens,Q1,4,1,,
-gardens,Q1,5,0,,
-gardens,Q2,1,1,,
-gardens,Q2,2,0,,
-gardens,Q2,3,0,,
-gardens,Q2,4,0,,
-gardens,Q2,5,0,,
-gardens,Q3,1,1,,
-gardens,Q3,2,1,,
-gardens,Q3,3,1,,
-gardens,Q3,4,1,,
-gardens,Q3,5,0,,
-gardens,Q4,1,0,,
-gardens,Q4,2,0,,
-gardens,Q4,3,0,,
-gardens,Q4,4,1,,
-gardens,Q4,5,1,,
-gardens,Q5,1,1,,
-gardens,Q5,2,0,,
-gardens,Q5,3,1,,
-gardens,Q5,4,0,,
-gardens,Q5,5,0,,
-gardens,Q6,1,1,,
-gardens,Q6,2,0,,
-gardens,Q6,3,0,,
-gardens,Q6,4,0,,
-gardens,Q6,5,0,,
-gardens,Q7,1,0,,
-gardens,Q7,2,0,,
-gardens,Q7,3,0,,
-gardens,Q7,4,1,,
-gardens,Q7,5,1,,
-gardens,Q8,1,1,,
-gardens,Q8,2,0,,
-gardens,Q8,3,1,,
-gardens,Q8,4,0,,
-gardens,Q8,5,1,,
-gardens,Q9,1,1,,
-gardens,Q9,2,1,,
-gardens,Q9,3,1,,
-gardens,Q9,4,1,,
-gardens,Q9,5,0,,
-gardens,Q10,1,0,,
-gardens,Q10,2,1,,
-gardens,Q10,3,1,,
-gardens,Q10,4,1,,
-gardens,Q10,5,1,,
-parks ,Q1,1,0,,
-parks ,Q1,2,0,,
-parks ,Q1,3,1,,
-parks ,Q1,4,0,,
-parks ,Q1,5,1,,
-parks ,Q2,1,1,,
-parks ,Q2,2,0,,
-parks ,Q2,3,1,,
-parks ,Q2,4,0,,
-parks ,Q2,5,0,,
-parks ,Q3,1,0,,
-parks ,Q3,2,0,,
-parks ,Q3,3,1,,
-parks ,Q3,4,0,,
-parks ,Q3,5,0,,
-parks ,Q4,1,1,,
-parks ,Q4,2,0,,
-parks ,Q4,3,0,,
-parks ,Q4,4,1,,
-parks ,Q4,5,1,,
-parks ,Q5,1,1,,
-parks ,Q5,2,1,,
-parks ,Q5,3,1,,
-parks ,Q5,4,0,,
-parks ,Q5,5,0,,
-parks ,Q6,1,0,,
-parks ,Q6,2,0,,
-parks ,Q6,3,0,,
-parks ,Q6,4,1,,
-parks ,Q6,5,0,,
-parks ,Q7,1,0,,
-parks ,Q7,2,0,,
-parks ,Q7,3,1,,
-parks ,Q7,4,1,,
-parks ,Q7,5,1,,
-parks ,Q8,1,0,,
-parks ,Q8,2,0,,
-parks ,Q8,3,1,,
-parks ,Q8,4,0,,
-parks ,Q8,5,1,,
-parks ,Q9,1,0,,
-parks ,Q9,2,1,,
-parks ,Q9,3,0,,
-parks ,Q9,4,1,,
-parks ,Q9,5,1,,
-parks ,Q10,1,0,,
-parks ,Q10,2,0,,
-parks ,Q10,3,1,,
-parks ,Q10,4,1,,
-parks ,Q10,5,1,,
-beauty & spas ,Q1,1,0,,
-beauty & spas ,Q1,2,1,,
-beauty & spas ,Q1,3,1,,
-beauty & spas ,Q1,4,0,,
-beauty & spas ,Q1,5,1,,
-beauty & spas ,Q2,1,1,,
-beauty & spas ,Q2,2,0,,
-beauty & spas ,Q2,3,0,,
-beauty & spas ,Q2,4,1,,
-beauty & spas ,Q2,5,1,,
-beauty & spas ,Q3,1,1,,
-beauty & spas ,Q3,2,0,,
-beauty & spas ,Q3,3,1,,
-beauty & spas ,Q3,4,0,,
-beauty & spas ,Q3,5,0,,
-beauty & spas ,Q4,1,0,,
-beauty & spas ,Q4,2,0,,
-beauty & spas ,Q4,3,0,,
-beauty & spas ,Q4,4,1,,
-beauty & spas ,Q4,5,0,,
-beauty & spas ,Q5,1,1,,
-beauty & spas ,Q5,2,1,,
-beauty & spas ,Q5,3,1,,
-beauty & spas ,Q5,4,0,,
-beauty & spas ,Q5,5,0,,
-beauty & spas ,Q6,1,0,,
-beauty & spas ,Q6,2,0,,
-beauty & spas ,Q6,3,1,,
-beauty & spas ,Q6,4,0,,
-beauty & spas ,Q6,5,0,,
-beauty & spas ,Q7,1,0,,
-beauty & spas ,Q7,2,0,,
-beauty & spas ,Q7,3,1,,
-beauty & spas ,Q7,4,1,,
-beauty & spas ,Q7,5,1,,
-beauty & spas ,Q8,1,0,,
-beauty & spas ,Q8,2,1,,
-beauty & spas ,Q8,3,1,,
-beauty & spas ,Q8,4,0,,
-beauty & spas ,Q8,5,1,,
-beauty & spas ,Q9,1,1,,
-beauty & spas ,Q9,2,0,,
-beauty & spas ,Q9,3,1,,
-beauty & spas ,Q9,4,1,,
-beauty & spas ,Q9,5,0,,
-beauty & spas ,Q10,1,0,,
-beauty & spas ,Q10,2,0,,
-beauty & spas ,Q10,3,0,,
-beauty & spas ,Q10,4,0,,
-beauty & spas ,Q10,5,0,,
-juice bars,Q1,1,0,,
-juice bars,Q1,2,1,,
-juice bars,Q1,3,0,,
-juice bars,Q1,4,1,,
-juice bars,Q1,5,1,,
-juice bars,Q2,1,1,,
-juice bars,Q2,2,1,,
-juice bars,Q2,3,1,,
-juice bars,Q2,4,0,,
-juice bars,Q2,5,0,,
-juice bars,Q3,1,0,,
-juice bars,Q3,2,1,,
-juice bars,Q3,3,0,,
-juice bars,Q3,4,0,,
-juice bars,Q3,5,0,,
-juice bars,Q4,1,0,,
-juice bars,Q4,2,1,,
-juice bars,Q4,3,1,,
-juice bars,Q4,4,0,,
-juice bars,Q4,5,1,,
-juice bars,Q5,1,1,,
-juice bars,Q5,2,0,,
-juice bars,Q5,3,0,,
-juice bars,Q5,4,1,,
-juice bars,Q5,5,0,,
-juice bars,Q6,1,0,,
-juice bars,Q6,2,1,,
-juice bars,Q6,3,1,,
-juice bars,Q6,4,0,,
-juice bars,Q6,5,0,,
-juice bars,Q7,1,0,,
-juice bars,Q7,2,0,,
-juice bars,Q7,3,0,,
-juice bars,Q7,4,1,,
-juice bars,Q7,5,1,,
-juice bars,Q8,1,0,,
-juice bars,Q8,2,1,,
-juice bars,Q8,3,1,,
-juice bars,Q8,4,1,,
-juice bars,Q8,5,1,,
-juice bars,Q9,1,0,,
-juice bars,Q9,2,0,,
-juice bars,Q9,3,1,,
-juice bars,Q9,4,0,,
-juice bars,Q9,5,0,,
-juice bars,Q10,1,0,,
-juice bars,Q10,2,1,,
-juice bars,Q10,3,1,,
-juice bars,Q10,4,1,,
-juice bars,Q10,5,0,,
-restaurants ,Q1,1,0,,
-restaurants ,Q1,2,1,,
-restaurants ,Q1,3,1,,
-restaurants ,Q1,4,1,,
-restaurants ,Q1,5,0,,
-restaurants ,Q2,1,0,,
-restaurants ,Q2,2,0,,
-restaurants ,Q2,3,1,,
-restaurants ,Q2,4,1,,
-restaurants ,Q2,5,0,,
-restaurants ,Q3,1,0,,
-restaurants ,Q3,2,1,,
-restaurants ,Q3,3,1,,
-restaurants ,Q3,4,0,,
-restaurants ,Q3,5,1,,
-restaurants ,Q4,1,0,,
-restaurants ,Q4,2,0,,
-restaurants ,Q4,3,0,,
-restaurants ,Q4,4,1,,
-restaurants ,Q4,5,1,,
-restaurants ,Q5,1,0,,
-restaurants ,Q5,2,0,,
-restaurants ,Q5,3,0,,
-restaurants ,Q5,4,1,,
-restaurants ,Q5,5,1,,
-restaurants ,Q6,1,0,,
-restaurants ,Q6,2,1,,
-restaurants ,Q6,3,1,,
-restaurants ,Q6,4,0,,
-restaurants ,Q6,5,1,,
-restaurants ,Q7,1,0,,
-restaurants ,Q7,2,0,,
-restaurants ,Q7,3,1,,
-restaurants ,Q7,4,0,,
-restaurants ,Q7,5,1,,
-restaurants ,Q8,1,0,,
-restaurants ,Q8,2,0,,
-restaurants ,Q8,3,1,,
-restaurants ,Q8,4,1,,
-restaurants ,Q8,5,1,,
-restaurants ,Q9,1,1,,
-restaurants ,Q9,2,0,,
-restaurants ,Q9,3,0,,
-restaurants ,Q9,4,1,,
-restaurants ,Q9,5,1,,
-restaurants ,Q10,1,0,,
-restaurants ,Q10,2,1,,
-restaurants ,Q10,3,1,,
-restaurants ,Q10,4,0,,
-restaurants ,Q10,5,1,,
-pubs/bars ,Q1,1,0,,
-pubs/bars ,Q1,2,1,,
-pubs/bars ,Q1,3,1,,
-pubs/bars ,Q1,4,0,,
-pubs/bars ,Q1,5,1,,
-pubs/bars ,Q2,1,1,,
-pubs/bars ,Q2,2,0,,
-pubs/bars ,Q2,3,1,,
-pubs/bars ,Q2,4,0,,
-pubs/bars ,Q2,5,0,,
-pubs/bars ,Q3,1,0,,
-pubs/bars ,Q3,2,1,,
-pubs/bars ,Q3,3,1,,
-pubs/bars ,Q3,4,0,,
-pubs/bars ,Q3,5,0,,
-pubs/bars ,Q4,1,1,,
-pubs/bars ,Q4,2,0,,
-pubs/bars ,Q4,3,1,,
-pubs/bars ,Q4,4,1,,
-pubs/bars ,Q4,5,1,,
-pubs/bars ,Q5,1,0,,
-pubs/bars ,Q5,2,1,,
-pubs/bars ,Q5,3,1,,
-pubs/bars ,Q5,4,1,,
-pubs/bars ,Q5,5,0,,
-pubs/bars ,Q6,1,1,,
-pubs/bars ,Q6,2,1,,
-pubs/bars ,Q6,3,1,,
-pubs/bars ,Q6,4,1,,
-pubs/bars ,Q6,5,0,,
-pubs/bars ,Q7,1,0,,
-pubs/bars ,Q7,2,1,,
-pubs/bars ,Q7,3,0,,
-pubs/bars ,Q7,4,0,,
-pubs/bars ,Q7,5,0,,
-pubs/bars ,Q8,1,0,,
-pubs/bars ,Q8,2,1,,
-pubs/bars ,Q8,3,1,,
-pubs/bars ,Q8,4,1,,
-pubs/bars ,Q8,5,1,,
-pubs/bars ,Q9,1,0,,
-pubs/bars ,Q9,2,0,,
-pubs/bars ,Q9,3,1,,
-pubs/bars ,Q9,4,1,,
-pubs/bars ,Q9,5,0,,
-pubs/bars ,Q10,1,1,,
-pubs/bars ,Q10,2,0,,
-pubs/bars ,Q10,3,1,,
-pubs/bars ,Q10,4,0,,
-pubs/bars ,Q10,5,1,,
-burger/pizza shops ,Q1,1,1,,
-burger/pizza shops ,Q1,2,0,,
-burger/pizza shops ,Q1,3,0,,
-burger/pizza shops ,Q1,4,1,,
-burger/pizza shops ,Q1,5,0,,
-burger/pizza shops ,Q2,1,1,,
-burger/pizza shops ,Q2,2,1,,
-burger/pizza shops ,Q2,3,0,,
-burger/pizza shops ,Q2,4,0,,
-burger/pizza shops ,Q2,5,0,,
-burger/pizza shops ,Q3,1,1,,
-burger/pizza shops ,Q3,2,1,,
-burger/pizza shops ,Q3,3,0,,
-burger/pizza shops ,Q3,4,1,,
-burger/pizza shops ,Q3,5,0,,
-burger/pizza shops ,Q4,1,1,,
-burger/pizza shops ,Q4,2,1,,
-burger/pizza shops ,Q4,3,0,,
-burger/pizza shops ,Q4,4,0,,
-burger/pizza shops ,Q4,5,0,,
-burger/pizza shops ,Q5,1,1,,
-burger/pizza shops ,Q5,2,1,,
-burger/pizza shops ,Q5,3,0,,
-burger/pizza shops ,Q5,4,0,,
-burger/pizza shops ,Q5,5,0,,
-burger/pizza shops ,Q6,1,0,,
-burger/pizza shops ,Q6,2,1,,
-burger/pizza shops ,Q6,3,1,,
-burger/pizza shops ,Q6,4,1,,
-burger/pizza shops ,Q6,5,0,,
-burger/pizza shops ,Q7,1,1,,
-burger/pizza shops ,Q7,2,1,,
-burger/pizza shops ,Q7,3,0,,
-burger/pizza shops ,Q7,4,1,,
-burger/pizza shops ,Q7,5,0,,
-burger/pizza shops ,Q8,1,0,,
-burger/pizza shops ,Q8,2,0,,
-burger/pizza shops ,Q8,3,1,,
-burger/pizza shops ,Q8,4,0,,
-burger/pizza shops ,Q8,5,0,,
-burger/pizza shops ,Q9,1,1,,
-burger/pizza shops ,Q9,2,1,,
-burger/pizza shops ,Q9,3,1,,
-burger/pizza shops ,Q9,4,0,,
-burger/pizza shops ,Q9,5,1,,
-burger/pizza shops ,Q10,1,1,,
-burger/pizza shops ,Q10,2,0,,
-burger/pizza shops ,Q10,3,1,,
-burger/pizza shops ,Q10,4,1,,
-burger/pizza shops ,Q10,5,0,,
-bakeries ,Q1,1,0,,
-bakeries ,Q1,2,1,,
-bakeries ,Q1,3,1,,
-bakeries ,Q1,4,0,,
-bakeries ,Q1,5,0,,
-bakeries ,Q2,1,1,,
-bakeries ,Q2,2,1,,
-bakeries ,Q2,3,0,,
-bakeries ,Q2,4,1,,
-bakeries ,Q2,5,0,,
-bakeries ,Q3,1,0,,
-bakeries ,Q3,2,0,,
-bakeries ,Q3,3,0,,
-bakeries ,Q3,4,1,,
-bakeries ,Q3,5,0,,
-bakeries ,Q4,1,0,,
-bakeries ,Q4,2,1,,
-bakeries ,Q4,3,0,,
-bakeries ,Q4,4,0,,
-bakeries ,Q4,5,1,,
-bakeries ,Q5,1,1,,
-bakeries ,Q5,2,1,,
-bakeries ,Q5,3,1,,
-bakeries ,Q5,4,1,,
-bakeries ,Q5,5,0,,
-bakeries ,Q6,1,1,,
-bakeries ,Q6,2,0,,
-bakeries ,Q6,3,1,,
-bakeries ,Q6,4,1,,
-bakeries ,Q6,5,1,,
-bakeries ,Q7,1,0,,
-bakeries ,Q7,2,1,,
-bakeries ,Q7,3,1,,
-bakeries ,Q7,4,1,,
-bakeries ,Q7,5,1,,
-bakeries ,Q8,1,1,,
-bakeries ,Q8,2,1,,
-bakeries ,Q8,3,1,,
-bakeries ,Q8,4,0,,
-bakeries ,Q8,5,1,,
-bakeries ,Q9,1,1,,
-bakeries ,Q9,2,1,,
-bakeries ,Q9,3,0,,
-bakeries ,Q9,4,0,,
-bakeries ,Q9,5,0,,
-bakeries ,Q10,1,1,,
-bakeries ,Q10,2,0,,
-bakeries ,Q10,3,1,,
-bakeries ,Q10,4,1,,
-bakeries ,Q10,5,0,,
-cafes ,Q1,1,1,,
-cafes ,Q1,2,1,,
-cafes ,Q1,3,0,,
-cafes ,Q1,4,1,,
-cafes ,Q1,5,1,,
-cafes ,Q2,1,0,,
-cafes ,Q2,2,1,,
-cafes ,Q2,3,0,,
-cafes ,Q2,4,1,,
-cafes ,Q2,5,0,,
-cafes ,Q3,1,0,,
-cafes ,Q3,2,1,,
-cafes ,Q3,3,0,,
-cafes ,Q3,4,0,,
-cafes ,Q3,5,0,,
-cafes ,Q4,1,0,,
-cafes ,Q4,2,0,,
-cafes ,Q4,3,1,,
-cafes ,Q4,4,1,,
-cafes ,Q4,5,1,,
-cafes ,Q5,1,1,,
-cafes ,Q5,2,0,,
-cafes ,Q5,3,0,,
-cafes ,Q5,4,0,,
-cafes ,Q5,5,0,,
-cafes ,Q6,1,0,,
-cafes ,Q6,2,0,,
-cafes ,Q6,3,0,,
-cafes ,Q6,4,0,,
-cafes ,Q6,5,0,,
-cafes ,Q7,1,0,,
-cafes ,Q7,2,0,,
-cafes ,Q7,3,1,,
-cafes ,Q7,4,1,,
-cafes ,Q7,5,0,,
-cafes ,Q8,1,0,,
-cafes ,Q8,2,0,,
-cafes ,Q8,3,0,,
-cafes ,Q8,4,0,,
-cafes ,Q8,5,0,,
-cafes ,Q9,1,1,,
-cafes ,Q9,2,0,,
-cafes ,Q9,3,0,,
-cafes ,Q9,4,1,,
-cafes ,Q9,5,1,,
-cafes ,Q10,1,1,,
-cafes ,Q10,2,1,,
-cafes ,Q10,3,0,,
-cafes ,Q10,4,0,,
-cafes ,Q10,5,0,,
+Category,Question,Question_Scale,Weight
+resorts,Q1,1,0
+resorts,Q1,2,1
+resorts,Q1,3,1
+resorts,Q1,4,1
+resorts,Q1,5,1
+resorts,Q2,1,0
+resorts,Q2,2,1
+resorts,Q2,3,0
+resorts,Q2,4,0
+resorts,Q2,5,1
+resorts,Q3,1,1
+resorts,Q3,2,1
+resorts,Q3,3,0
+resorts,Q3,4,0
+resorts,Q3,5,0
+resorts,Q4,1,1
+resorts,Q4,2,1
+resorts,Q4,3,1
+resorts,Q4,4,1
+resorts,Q4,5,1
+resorts,Q5,1,0
+resorts,Q5,2,0
+resorts,Q5,3,1
+resorts,Q5,4,0
+resorts,Q5,5,0
+resorts,Q6,1,1
+resorts,Q6,2,1
+resorts,Q6,3,1
+resorts,Q6,4,0
+resorts,Q6,5,0
+resorts,Q7,1,0
+resorts,Q7,2,0
+resorts,Q7,3,1
+resorts,Q7,4,1
+resorts,Q7,5,1
+resorts,Q8,1,0
+resorts,Q8,2,0
+resorts,Q8,3,0
+resorts,Q8,4,0
+resorts,Q8,5,0
+resorts,Q9,1,1
+resorts,Q9,2,1
+resorts,Q9,3,1
+resorts,Q9,4,1
+resorts,Q9,5,0
+resorts,Q10,1,0
+resorts,Q10,2,1
+resorts,Q10,3,0
+resorts,Q10,4,1
+resorts,Q10,5,0
+churches,Q1,1,1
+churches,Q1,2,0
+churches,Q1,3,1
+churches,Q1,4,1
+churches,Q1,5,1
+churches,Q2,1,0
+churches,Q2,2,1
+churches,Q2,3,1
+churches,Q2,4,1
+churches,Q2,5,0
+churches,Q3,1,0
+churches,Q3,2,1
+churches,Q3,3,1
+churches,Q3,4,0
+churches,Q3,5,1
+churches,Q4,1,0
+churches,Q4,2,1
+churches,Q4,3,1
+churches,Q4,4,1
+churches,Q4,5,1
+churches,Q5,1,1
+churches,Q5,2,1
+churches,Q5,3,1
+churches,Q5,4,0
+churches,Q5,5,0
+churches,Q6,1,1
+churches,Q6,2,1
+churches,Q6,3,1
+churches,Q6,4,1
+churches,Q6,5,1
+churches,Q7,1,1
+churches,Q7,2,0
+churches,Q7,3,1
+churches,Q7,4,1
+churches,Q7,5,1
+churches,Q8,1,1
+churches,Q8,2,1
+churches,Q8,3,0
+churches,Q8,4,1
+churches,Q8,5,0
+churches,Q9,1,1
+churches,Q9,2,0
+churches,Q9,3,1
+churches,Q9,4,0
+churches,Q9,5,1
+churches,Q10,1,1
+churches,Q10,2,1
+churches,Q10,3,1
+churches,Q10,4,0
+churches,Q10,5,0
+dance-clubs,Q1,1,1
+dance-clubs,Q1,2,0
+dance-clubs,Q1,3,1
+dance-clubs,Q1,4,0
+dance-clubs,Q1,5,1
+dance-clubs,Q2,1,1
+dance-clubs,Q2,2,1
+dance-clubs,Q2,3,1
+dance-clubs,Q2,4,1
+dance-clubs,Q2,5,1
+dance-clubs,Q3,1,0
+dance-clubs,Q3,2,0
+dance-clubs,Q3,3,1
+dance-clubs,Q3,4,0
+dance-clubs,Q3,5,1
+dance-clubs,Q4,1,1
+dance-clubs,Q4,2,0
+dance-clubs,Q4,3,1
+dance-clubs,Q4,4,1
+dance-clubs,Q4,5,1
+dance-clubs,Q5,1,1
+dance-clubs,Q5,2,1
+dance-clubs,Q5,3,0
+dance-clubs,Q5,4,1
+dance-clubs,Q5,5,1
+dance-clubs,Q6,1,0
+dance-clubs,Q6,2,1
+dance-clubs,Q6,3,1
+dance-clubs,Q6,4,0
+dance-clubs,Q6,5,1
+dance-clubs,Q7,1,1
+dance-clubs,Q7,2,1
+dance-clubs,Q7,3,1
+dance-clubs,Q7,4,1
+dance-clubs,Q7,5,1
+dance-clubs,Q8,1,1
+dance-clubs,Q8,2,1
+dance-clubs,Q8,3,0
+dance-clubs,Q8,4,0
+dance-clubs,Q8,5,1
+dance-clubs,Q9,1,1
+dance-clubs,Q9,2,0
+dance-clubs,Q9,3,0
+dance-clubs,Q9,4,0
+dance-clubs,Q9,5,0
+dance-clubs,Q10,1,0
+dance-clubs,Q10,2,0
+dance-clubs,Q10,3,0
+dance-clubs,Q10,4,0
+dance-clubs,Q10,5,1
+art-galleries,Q1,1,1
+art-galleries,Q1,2,1
+art-galleries,Q1,3,0
+art-galleries,Q1,4,1
+art-galleries,Q1,5,0
+art-galleries,Q2,1,1
+art-galleries,Q2,2,0
+art-galleries,Q2,3,1
+art-galleries,Q2,4,0
+art-galleries,Q2,5,0
+art-galleries,Q3,1,0
+art-galleries,Q3,2,1
+art-galleries,Q3,3,1
+art-galleries,Q3,4,0
+art-galleries,Q3,5,1
+art-galleries,Q4,1,1
+art-galleries,Q4,2,1
+art-galleries,Q4,3,1
+art-galleries,Q4,4,0
+art-galleries,Q4,5,1
+art-galleries,Q5,1,0
+art-galleries,Q5,2,0
+art-galleries,Q5,3,1
+art-galleries,Q5,4,0
+art-galleries,Q5,5,0
+art-galleries,Q6,1,0
+art-galleries,Q6,2,1
+art-galleries,Q6,3,0
+art-galleries,Q6,4,0
+art-galleries,Q6,5,0
+art-galleries,Q7,1,0
+art-galleries,Q7,2,0
+art-galleries,Q7,3,1
+art-galleries,Q7,4,1
+art-galleries,Q7,5,1
+art-galleries,Q8,1,1
+art-galleries,Q8,2,1
+art-galleries,Q8,3,0
+art-galleries,Q8,4,0
+art-galleries,Q8,5,1
+art-galleries,Q9,1,1
+art-galleries,Q9,2,1
+art-galleries,Q9,3,1
+art-galleries,Q9,4,0
+art-galleries,Q9,5,0
+art-galleries,Q10,1,0
+art-galleries,Q10,2,0
+art-galleries,Q10,3,1
+art-galleries,Q10,4,0
+art-galleries,Q10,5,0
+theatres,Q1,1,1
+theatres,Q1,2,0
+theatres,Q1,3,0
+theatres,Q1,4,1
+theatres,Q1,5,1
+theatres,Q2,1,1
+theatres,Q2,2,1
+theatres,Q2,3,0
+theatres,Q2,4,0
+theatres,Q2,5,1
+theatres,Q3,1,0
+theatres,Q3,2,1
+theatres,Q3,3,1
+theatres,Q3,4,0
+theatres,Q3,5,1
+theatres,Q4,1,0
+theatres,Q4,2,0
+theatres,Q4,3,0
+theatres,Q4,4,1
+theatres,Q4,5,1
+theatres,Q5,1,1
+theatres,Q5,2,0
+theatres,Q5,3,1
+theatres,Q5,4,1
+theatres,Q5,5,1
+theatres,Q6,1,1
+theatres,Q6,2,0
+theatres,Q6,3,1
+theatres,Q6,4,1
+theatres,Q6,5,1
+theatres,Q7,1,1
+theatres,Q7,2,0
+theatres,Q7,3,0
+theatres,Q7,4,1
+theatres,Q7,5,1
+theatres,Q8,1,0
+theatres,Q8,2,1
+theatres,Q8,3,0
+theatres,Q8,4,0
+theatres,Q8,5,1
+theatres,Q9,1,1
+theatres,Q9,2,0
+theatres,Q9,3,1
+theatres,Q9,4,0
+theatres,Q9,5,1
+theatres,Q10,1,0
+theatres,Q10,2,1
+theatres,Q10,3,0
+theatres,Q10,4,1
+theatres,Q10,5,1
+museums,Q1,1,1
+museums,Q1,2,0
+museums,Q1,3,1
+museums,Q1,4,1
+museums,Q1,5,0
+museums,Q2,1,0
+museums,Q2,2,1
+museums,Q2,3,1
+museums,Q2,4,0
+museums,Q2,5,1
+museums,Q3,1,0
+museums,Q3,2,1
+museums,Q3,3,1
+museums,Q3,4,1
+museums,Q3,5,1
+museums,Q4,1,1
+museums,Q4,2,1
+museums,Q4,3,1
+museums,Q4,4,0
+museums,Q4,5,0
+museums,Q5,1,0
+museums,Q5,2,0
+museums,Q5,3,0
+museums,Q5,4,0
+museums,Q5,5,1
+museums,Q6,1,0
+museums,Q6,2,0
+museums,Q6,3,0
+museums,Q6,4,0
+museums,Q6,5,0
+museums,Q7,1,1
+museums,Q7,2,0
+museums,Q7,3,1
+museums,Q7,4,1
+museums,Q7,5,0
+museums,Q8,1,1
+museums,Q8,2,1
+museums,Q8,3,0
+museums,Q8,4,0
+museums,Q8,5,1
+museums,Q9,1,0
+museums,Q9,2,0
+museums,Q9,3,1
+museums,Q9,4,0
+museums,Q9,5,0
+museums,Q10,1,1
+museums,Q10,2,0
+museums,Q10,3,0
+museums,Q10,4,1
+museums,Q10,5,1
+zoo,Q1,1,1
+zoo,Q1,2,1
+zoo,Q1,3,0
+zoo,Q1,4,1
+zoo,Q1,5,1
+zoo,Q2,1,1
+zoo,Q2,2,0
+zoo,Q2,3,1
+zoo,Q2,4,1
+zoo,Q2,5,0
+zoo,Q3,1,1
+zoo,Q3,2,1
+zoo,Q3,3,1
+zoo,Q3,4,1
+zoo,Q3,5,1
+zoo,Q4,1,1
+zoo,Q4,2,0
+zoo,Q4,3,1
+zoo,Q4,4,1
+zoo,Q4,5,0
+zoo,Q5,1,0
+zoo,Q5,2,0
+zoo,Q5,3,1
+zoo,Q5,4,1
+zoo,Q5,5,0
+zoo,Q6,1,0
+zoo,Q6,2,0
+zoo,Q6,3,1
+zoo,Q6,4,0
+zoo,Q6,5,0
+zoo,Q7,1,0
+zoo,Q7,2,1
+zoo,Q7,3,0
+zoo,Q7,4,1
+zoo,Q7,5,1
+zoo,Q8,1,0
+zoo,Q8,2,0
+zoo,Q8,3,1
+zoo,Q8,4,1
+zoo,Q8,5,1
+zoo,Q9,1,1
+zoo,Q9,2,1
+zoo,Q9,3,1
+zoo,Q9,4,0
+zoo,Q9,5,1
+zoo,Q10,1,0
+zoo,Q10,2,0
+zoo,Q10,3,1
+zoo,Q10,4,0
+zoo,Q10,5,1
+swimming-pools,Q1,1,0
+swimming-pools,Q1,2,0
+swimming-pools,Q1,3,1
+swimming-pools,Q1,4,1
+swimming-pools,Q1,5,0
+swimming-pools,Q2,1,1
+swimming-pools,Q2,2,0
+swimming-pools,Q2,3,1
+swimming-pools,Q2,4,0
+swimming-pools,Q2,5,0
+swimming-pools,Q3,1,1
+swimming-pools,Q3,2,1
+swimming-pools,Q3,3,1
+swimming-pools,Q3,4,0
+swimming-pools,Q3,5,0
+swimming-pools,Q4,1,0
+swimming-pools,Q4,2,1
+swimming-pools,Q4,3,1
+swimming-pools,Q4,4,0
+swimming-pools,Q4,5,0
+swimming-pools,Q5,1,1
+swimming-pools,Q5,2,1
+swimming-pools,Q5,3,0
+swimming-pools,Q5,4,0
+swimming-pools,Q5,5,1
+swimming-pools,Q6,1,1
+swimming-pools,Q6,2,0
+swimming-pools,Q6,3,1
+swimming-pools,Q6,4,0
+swimming-pools,Q6,5,1
+swimming-pools,Q7,1,1
+swimming-pools,Q7,2,1
+swimming-pools,Q7,3,1
+swimming-pools,Q7,4,1
+swimming-pools,Q7,5,1
+swimming-pools,Q8,1,1
+swimming-pools,Q8,2,0
+swimming-pools,Q8,3,1
+swimming-pools,Q8,4,0
+swimming-pools,Q8,5,0
+swimming-pools,Q9,1,0
+swimming-pools,Q9,2,0
+swimming-pools,Q9,3,1
+swimming-pools,Q9,4,1
+swimming-pools,Q9,5,1
+swimming-pools,Q10,1,1
+swimming-pools,Q10,2,1
+swimming-pools,Q10,3,0
+swimming-pools,Q10,4,0
+swimming-pools,Q10,5,0
+view-points,Q1,1,0
+view-points,Q1,2,0
+view-points,Q1,3,0
+view-points,Q1,4,1
+view-points,Q1,5,0
+view-points,Q2,1,0
+view-points,Q2,2,0
+view-points,Q2,3,0
+view-points,Q2,4,0
+view-points,Q2,5,0
+view-points,Q3,1,0
+view-points,Q3,2,1
+view-points,Q3,3,1
+view-points,Q3,4,0
+view-points,Q3,5,1
+view-points,Q4,1,1
+view-points,Q4,2,1
+view-points,Q4,3,1
+view-points,Q4,4,1
+view-points,Q4,5,0
+view-points,Q5,1,0
+view-points,Q5,2,0
+view-points,Q5,3,0
+view-points,Q5,4,0
+view-points,Q5,5,1
+view-points,Q6,1,1
+view-points,Q6,2,0
+view-points,Q6,3,1
+view-points,Q6,4,0
+view-points,Q6,5,1
+view-points,Q7,1,0
+view-points,Q7,2,0
+view-points,Q7,3,0
+view-points,Q7,4,1
+view-points,Q7,5,1
+view-points,Q8,1,1
+view-points,Q8,2,1
+view-points,Q8,3,1
+view-points,Q8,4,1
+view-points,Q8,5,0
+view-points,Q9,1,0
+view-points,Q9,2,1
+view-points,Q9,3,1
+view-points,Q9,4,1
+view-points,Q9,5,1
+view-points,Q10,1,0
+view-points,Q10,2,0
+view-points,Q10,3,1
+view-points,Q10,4,0
+view-points,Q10,5,0
+beaches,Q1,1,0
+beaches,Q1,2,0
+beaches,Q1,3,0
+beaches,Q1,4,0
+beaches,Q1,5,1
+beaches,Q2,1,1
+beaches,Q2,2,1
+beaches,Q2,3,1
+beaches,Q2,4,1
+beaches,Q2,5,0
+beaches,Q3,1,0
+beaches,Q3,2,1
+beaches,Q3,3,1
+beaches,Q3,4,0
+beaches,Q3,5,0
+beaches,Q4,1,0
+beaches,Q4,2,1
+beaches,Q4,3,1
+beaches,Q4,4,0
+beaches,Q4,5,1
+beaches,Q5,1,1
+beaches,Q5,2,1
+beaches,Q5,3,0
+beaches,Q5,4,0
+beaches,Q5,5,0
+beaches,Q6,1,1
+beaches,Q6,2,0
+beaches,Q6,3,1
+beaches,Q6,4,1
+beaches,Q6,5,1
+beaches,Q7,1,1
+beaches,Q7,2,1
+beaches,Q7,3,0
+beaches,Q7,4,0
+beaches,Q7,5,1
+beaches,Q8,1,1
+beaches,Q8,2,1
+beaches,Q8,3,1
+beaches,Q8,4,1
+beaches,Q8,5,0
+beaches,Q9,1,0
+beaches,Q9,2,1
+beaches,Q9,3,0
+beaches,Q9,4,1
+beaches,Q9,5,0
+beaches,Q10,1,0
+beaches,Q10,2,0
+beaches,Q10,3,1
+beaches,Q10,4,0
+beaches,Q10,5,1
+malls,Q1,1,1
+malls,Q1,2,0
+malls,Q1,3,1
+malls,Q1,4,0
+malls,Q1,5,1
+malls,Q2,1,1
+malls,Q2,2,1
+malls,Q2,3,0
+malls,Q2,4,0
+malls,Q2,5,0
+malls,Q3,1,1
+malls,Q3,2,0
+malls,Q3,3,1
+malls,Q3,4,1
+malls,Q3,5,1
+malls,Q4,1,0
+malls,Q4,2,1
+malls,Q4,3,1
+malls,Q4,4,1
+malls,Q4,5,0
+malls,Q5,1,1
+malls,Q5,2,1
+malls,Q5,3,1
+malls,Q5,4,0
+malls,Q5,5,1
+malls,Q6,1,0
+malls,Q6,2,1
+malls,Q6,3,1
+malls,Q6,4,0
+malls,Q6,5,1
+malls,Q7,1,1
+malls,Q7,2,0
+malls,Q7,3,1
+malls,Q7,4,0
+malls,Q7,5,1
+malls,Q8,1,1
+malls,Q8,2,0
+malls,Q8,3,0
+malls,Q8,4,0
+malls,Q8,5,1
+malls,Q9,1,0
+malls,Q9,2,0
+malls,Q9,3,0
+malls,Q9,4,1
+malls,Q9,5,1
+malls,Q10,1,0
+malls,Q10,2,1
+malls,Q10,3,1
+malls,Q10,4,1
+malls,Q10,5,0
+gyms,Q1,1,0
+gyms,Q1,2,1
+gyms,Q1,3,1
+gyms,Q1,4,0
+gyms,Q1,5,1
+gyms,Q2,1,0
+gyms,Q2,2,0
+gyms,Q2,3,1
+gyms,Q2,4,1
+gyms,Q2,5,0
+gyms,Q3,1,0
+gyms,Q3,2,1
+gyms,Q3,3,1
+gyms,Q3,4,1
+gyms,Q3,5,0
+gyms,Q4,1,0
+gyms,Q4,2,1
+gyms,Q4,3,0
+gyms,Q4,4,0
+gyms,Q4,5,1
+gyms,Q5,1,1
+gyms,Q5,2,0
+gyms,Q5,3,1
+gyms,Q5,4,1
+gyms,Q5,5,1
+gyms,Q6,1,1
+gyms,Q6,2,1
+gyms,Q6,3,1
+gyms,Q6,4,1
+gyms,Q6,5,0
+gyms,Q7,1,0
+gyms,Q7,2,0
+gyms,Q7,3,0
+gyms,Q7,4,1
+gyms,Q7,5,1
+gyms,Q8,1,0
+gyms,Q8,2,0
+gyms,Q8,3,1
+gyms,Q8,4,1
+gyms,Q8,5,1
+gyms,Q9,1,0
+gyms,Q9,2,1
+gyms,Q9,3,1
+gyms,Q9,4,0
+gyms,Q9,5,1
+gyms,Q10,1,0
+gyms,Q10,2,1
+gyms,Q10,3,0
+gyms,Q10,4,0
+gyms,Q10,5,0
+monuments,Q1,1,1
+monuments,Q1,2,1
+monuments,Q1,3,1
+monuments,Q1,4,0
+monuments,Q1,5,0
+monuments,Q2,1,0
+monuments,Q2,2,0
+monuments,Q2,3,0
+monuments,Q2,4,1
+monuments,Q2,5,1
+monuments,Q3,1,0
+monuments,Q3,2,0
+monuments,Q3,3,1
+monuments,Q3,4,0
+monuments,Q3,5,1
+monuments,Q4,1,1
+monuments,Q4,2,0
+monuments,Q4,3,1
+monuments,Q4,4,1
+monuments,Q4,5,1
+monuments,Q5,1,0
+monuments,Q5,2,1
+monuments,Q5,3,0
+monuments,Q5,4,0
+monuments,Q5,5,0
+monuments,Q6,1,0
+monuments,Q6,2,0
+monuments,Q6,3,0
+monuments,Q6,4,1
+monuments,Q6,5,0
+monuments,Q7,1,0
+monuments,Q7,2,1
+monuments,Q7,3,1
+monuments,Q7,4,0
+monuments,Q7,5,1
+monuments,Q8,1,0
+monuments,Q8,2,0
+monuments,Q8,3,0
+monuments,Q8,4,1
+monuments,Q8,5,0
+monuments,Q9,1,1
+monuments,Q9,2,0
+monuments,Q9,3,1
+monuments,Q9,4,0
+monuments,Q9,5,1
+monuments,Q10,1,1
+monuments,Q10,2,1
+monuments,Q10,3,1
+monuments,Q10,4,1
+monuments,Q10,5,0
+gardens,Q1,1,0
+gardens,Q1,2,1
+gardens,Q1,3,1
+gardens,Q1,4,1
+gardens,Q1,5,0
+gardens,Q2,1,1
+gardens,Q2,2,0
+gardens,Q2,3,0
+gardens,Q2,4,0
+gardens,Q2,5,0
+gardens,Q3,1,1
+gardens,Q3,2,1
+gardens,Q3,3,1
+gardens,Q3,4,1
+gardens,Q3,5,0
+gardens,Q4,1,0
+gardens,Q4,2,0
+gardens,Q4,3,0
+gardens,Q4,4,1
+gardens,Q4,5,1
+gardens,Q5,1,1
+gardens,Q5,2,0
+gardens,Q5,3,1
+gardens,Q5,4,0
+gardens,Q5,5,0
+gardens,Q6,1,1
+gardens,Q6,2,0
+gardens,Q6,3,0
+gardens,Q6,4,0
+gardens,Q6,5,0
+gardens,Q7,1,0
+gardens,Q7,2,0
+gardens,Q7,3,0
+gardens,Q7,4,1
+gardens,Q7,5,1
+gardens,Q8,1,1
+gardens,Q8,2,0
+gardens,Q8,3,1
+gardens,Q8,4,0
+gardens,Q8,5,1
+gardens,Q9,1,1
+gardens,Q9,2,1
+gardens,Q9,3,1
+gardens,Q9,4,1
+gardens,Q9,5,0
+gardens,Q10,1,0
+gardens,Q10,2,1
+gardens,Q10,3,1
+gardens,Q10,4,1
+gardens,Q10,5,1
+parks,Q1,1,0
+parks,Q1,2,0
+parks,Q1,3,1
+parks,Q1,4,0
+parks,Q1,5,1
+parks,Q2,1,1
+parks,Q2,2,0
+parks,Q2,3,1
+parks,Q2,4,0
+parks,Q2,5,0
+parks,Q3,1,0
+parks,Q3,2,0
+parks,Q3,3,1
+parks,Q3,4,0
+parks,Q3,5,0
+parks,Q4,1,1
+parks,Q4,2,0
+parks,Q4,3,0
+parks,Q4,4,1
+parks,Q4,5,1
+parks,Q5,1,1
+parks,Q5,2,1
+parks,Q5,3,1
+parks,Q5,4,0
+parks,Q5,5,0
+parks,Q6,1,0
+parks,Q6,2,0
+parks,Q6,3,0
+parks,Q6,4,1
+parks,Q6,5,0
+parks,Q7,1,0
+parks,Q7,2,0
+parks,Q7,3,1
+parks,Q7,4,1
+parks,Q7,5,1
+parks,Q8,1,0
+parks,Q8,2,0
+parks,Q8,3,1
+parks,Q8,4,0
+parks,Q8,5,1
+parks,Q9,1,0
+parks,Q9,2,1
+parks,Q9,3,0
+parks,Q9,4,1
+parks,Q9,5,1
+parks,Q10,1,0
+parks,Q10,2,0
+parks,Q10,3,1
+parks,Q10,4,1
+parks,Q10,5,1
+beauty-spas,Q1,1,0
+beauty-spas,Q1,2,1
+beauty-spas,Q1,3,1
+beauty-spas,Q1,4,0
+beauty-spas,Q1,5,1
+beauty-spas,Q2,1,1
+beauty-spas,Q2,2,0
+beauty-spas,Q2,3,0
+beauty-spas,Q2,4,1
+beauty-spas,Q2,5,1
+beauty-spas,Q3,1,1
+beauty-spas,Q3,2,0
+beauty-spas,Q3,3,1
+beauty-spas,Q3,4,0
+beauty-spas,Q3,5,0
+beauty-spas,Q4,1,0
+beauty-spas,Q4,2,0
+beauty-spas,Q4,3,0
+beauty-spas,Q4,4,1
+beauty-spas,Q4,5,0
+beauty-spas,Q5,1,1
+beauty-spas,Q5,2,1
+beauty-spas,Q5,3,1
+beauty-spas,Q5,4,0
+beauty-spas,Q5,5,0
+beauty-spas,Q6,1,0
+beauty-spas,Q6,2,0
+beauty-spas,Q6,3,1
+beauty-spas,Q6,4,0
+beauty-spas,Q6,5,0
+beauty-spas,Q7,1,0
+beauty-spas,Q7,2,0
+beauty-spas,Q7,3,1
+beauty-spas,Q7,4,1
+beauty-spas,Q7,5,1
+beauty-spas,Q8,1,0
+beauty-spas,Q8,2,1
+beauty-spas,Q8,3,1
+beauty-spas,Q8,4,0
+beauty-spas,Q8,5,1
+beauty-spas,Q9,1,1
+beauty-spas,Q9,2,0
+beauty-spas,Q9,3,1
+beauty-spas,Q9,4,1
+beauty-spas,Q9,5,0
+beauty-spas,Q10,1,0
+beauty-spas,Q10,2,0
+beauty-spas,Q10,3,0
+beauty-spas,Q10,4,0
+beauty-spas,Q10,5,0
+juice-bars,Q1,1,0
+juice-bars,Q1,2,1
+juice-bars,Q1,3,0
+juice-bars,Q1,4,1
+juice-bars,Q1,5,1
+juice-bars,Q2,1,1
+juice-bars,Q2,2,1
+juice-bars,Q2,3,1
+juice-bars,Q2,4,0
+juice-bars,Q2,5,0
+juice-bars,Q3,1,0
+juice-bars,Q3,2,1
+juice-bars,Q3,3,0
+juice-bars,Q3,4,0
+juice-bars,Q3,5,0
+juice-bars,Q4,1,0
+juice-bars,Q4,2,1
+juice-bars,Q4,3,1
+juice-bars,Q4,4,0
+juice-bars,Q4,5,1
+juice-bars,Q5,1,1
+juice-bars,Q5,2,0
+juice-bars,Q5,3,0
+juice-bars,Q5,4,1
+juice-bars,Q5,5,0
+juice-bars,Q6,1,0
+juice-bars,Q6,2,1
+juice-bars,Q6,3,1
+juice-bars,Q6,4,0
+juice-bars,Q6,5,0
+juice-bars,Q7,1,0
+juice-bars,Q7,2,0
+juice-bars,Q7,3,0
+juice-bars,Q7,4,1
+juice-bars,Q7,5,1
+juice-bars,Q8,1,0
+juice-bars,Q8,2,1
+juice-bars,Q8,3,1
+juice-bars,Q8,4,1
+juice-bars,Q8,5,1
+juice-bars,Q9,1,0
+juice-bars,Q9,2,0
+juice-bars,Q9,3,1
+juice-bars,Q9,4,0
+juice-bars,Q9,5,0
+juice-bars,Q10,1,0
+juice-bars,Q10,2,1
+juice-bars,Q10,3,1
+juice-bars,Q10,4,1
+juice-bars,Q10,5,0
+restaurants,Q1,1,0
+restaurants,Q1,2,1
+restaurants,Q1,3,1
+restaurants,Q1,4,1
+restaurants,Q1,5,0
+restaurants,Q2,1,0
+restaurants,Q2,2,0
+restaurants,Q2,3,1
+restaurants,Q2,4,1
+restaurants,Q2,5,0
+restaurants,Q3,1,0
+restaurants,Q3,2,1
+restaurants,Q3,3,1
+restaurants,Q3,4,0
+restaurants,Q3,5,1
+restaurants,Q4,1,0
+restaurants,Q4,2,0
+restaurants,Q4,3,0
+restaurants,Q4,4,1
+restaurants,Q4,5,1
+restaurants,Q5,1,0
+restaurants,Q5,2,0
+restaurants,Q5,3,0
+restaurants,Q5,4,1
+restaurants,Q5,5,1
+restaurants,Q6,1,0
+restaurants,Q6,2,1
+restaurants,Q6,3,1
+restaurants,Q6,4,0
+restaurants,Q6,5,1
+restaurants,Q7,1,0
+restaurants,Q7,2,0
+restaurants,Q7,3,1
+restaurants,Q7,4,0
+restaurants,Q7,5,1
+restaurants,Q8,1,0
+restaurants,Q8,2,0
+restaurants,Q8,3,1
+restaurants,Q8,4,1
+restaurants,Q8,5,1
+restaurants,Q9,1,1
+restaurants,Q9,2,0
+restaurants,Q9,3,0
+restaurants,Q9,4,1
+restaurants,Q9,5,1
+restaurants,Q10,1,0
+restaurants,Q10,2,1
+restaurants,Q10,3,1
+restaurants,Q10,4,0
+restaurants,Q10,5,1
+pubs-bars,Q1,1,0
+pubs-bars,Q1,2,1
+pubs-bars,Q1,3,1
+pubs-bars,Q1,4,0
+pubs-bars,Q1,5,1
+pubs-bars,Q2,1,1
+pubs-bars,Q2,2,0
+pubs-bars,Q2,3,1
+pubs-bars,Q2,4,0
+pubs-bars,Q2,5,0
+pubs-bars,Q3,1,0
+pubs-bars,Q3,2,1
+pubs-bars,Q3,3,1
+pubs-bars,Q3,4,0
+pubs-bars,Q3,5,0
+pubs-bars,Q4,1,1
+pubs-bars,Q4,2,0
+pubs-bars,Q4,3,1
+pubs-bars,Q4,4,1
+pubs-bars,Q4,5,1
+pubs-bars,Q5,1,0
+pubs-bars,Q5,2,1
+pubs-bars,Q5,3,1
+pubs-bars,Q5,4,1
+pubs-bars,Q5,5,0
+pubs-bars,Q6,1,1
+pubs-bars,Q6,2,1
+pubs-bars,Q6,3,1
+pubs-bars,Q6,4,1
+pubs-bars,Q6,5,0
+pubs-bars,Q7,1,0
+pubs-bars,Q7,2,1
+pubs-bars,Q7,3,0
+pubs-bars,Q7,4,0
+pubs-bars,Q7,5,0
+pubs-bars,Q8,1,0
+pubs-bars,Q8,2,1
+pubs-bars,Q8,3,1
+pubs-bars,Q8,4,1
+pubs-bars,Q8,5,1
+pubs-bars,Q9,1,0
+pubs-bars,Q9,2,0
+pubs-bars,Q9,3,1
+pubs-bars,Q9,4,1
+pubs-bars,Q9,5,0
+pubs-bars,Q10,1,1
+pubs-bars,Q10,2,0
+pubs-bars,Q10,3,1
+pubs-bars,Q10,4,0
+pubs-bars,Q10,5,1
+burger-pizza,Q1,1,1
+burger-pizza,Q1,2,0
+burger-pizza,Q1,3,0
+burger-pizza,Q1,4,1
+burger-pizza,Q1,5,0
+burger-pizza,Q2,1,1
+burger-pizza,Q2,2,1
+burger-pizza,Q2,3,0
+burger-pizza,Q2,4,0
+burger-pizza,Q2,5,0
+burger-pizza,Q3,1,1
+burger-pizza,Q3,2,1
+burger-pizza,Q3,3,0
+burger-pizza,Q3,4,1
+burger-pizza,Q3,5,0
+burger-pizza,Q4,1,1
+burger-pizza,Q4,2,1
+burger-pizza,Q4,3,0
+burger-pizza,Q4,4,0
+burger-pizza,Q4,5,0
+burger-pizza,Q5,1,1
+burger-pizza,Q5,2,1
+burger-pizza,Q5,3,0
+burger-pizza,Q5,4,0
+burger-pizza,Q5,5,0
+burger-pizza,Q6,1,0
+burger-pizza,Q6,2,1
+burger-pizza,Q6,3,1
+burger-pizza,Q6,4,1
+burger-pizza,Q6,5,0
+burger-pizza,Q7,1,1
+burger-pizza,Q7,2,1
+burger-pizza,Q7,3,0
+burger-pizza,Q7,4,1
+burger-pizza,Q7,5,0
+burger-pizza,Q8,1,0
+burger-pizza,Q8,2,0
+burger-pizza,Q8,3,1
+burger-pizza,Q8,4,0
+burger-pizza,Q8,5,0
+burger-pizza,Q9,1,1
+burger-pizza,Q9,2,1
+burger-pizza,Q9,3,1
+burger-pizza,Q9,4,0
+burger-pizza,Q9,5,1
+burger-pizza,Q10,1,1
+burger-pizza,Q10,2,0
+burger-pizza,Q10,3,1
+burger-pizza,Q10,4,1
+burger-pizza,Q10,5,0
+bakeries,Q1,1,0
+bakeries,Q1,2,1
+bakeries,Q1,3,1
+bakeries,Q1,4,0
+bakeries,Q1,5,0
+bakeries,Q2,1,1
+bakeries,Q2,2,1
+bakeries,Q2,3,0
+bakeries,Q2,4,1
+bakeries,Q2,5,0
+bakeries,Q3,1,0
+bakeries,Q3,2,0
+bakeries,Q3,3,0
+bakeries,Q3,4,1
+bakeries,Q3,5,0
+bakeries,Q4,1,0
+bakeries,Q4,2,1
+bakeries,Q4,3,0
+bakeries,Q4,4,0
+bakeries,Q4,5,1
+bakeries,Q5,1,1
+bakeries,Q5,2,1
+bakeries,Q5,3,1
+bakeries,Q5,4,1
+bakeries,Q5,5,0
+bakeries,Q6,1,1
+bakeries,Q6,2,0
+bakeries,Q6,3,1
+bakeries,Q6,4,1
+bakeries,Q6,5,1
+bakeries,Q7,1,0
+bakeries,Q7,2,1
+bakeries,Q7,3,1
+bakeries,Q7,4,1
+bakeries,Q7,5,1
+bakeries,Q8,1,1
+bakeries,Q8,2,1
+bakeries,Q8,3,1
+bakeries,Q8,4,0
+bakeries,Q8,5,1
+bakeries,Q9,1,1
+bakeries,Q9,2,1
+bakeries,Q9,3,0
+bakeries,Q9,4,0
+bakeries,Q9,5,0
+bakeries,Q10,1,1
+bakeries,Q10,2,0
+bakeries,Q10,3,1
+bakeries,Q10,4,1
+bakeries,Q10,5,0
+cafes,Q1,1,1
+cafes,Q1,2,1
+cafes,Q1,3,0
+cafes,Q1,4,1
+cafes,Q1,5,1
+cafes,Q2,1,0
+cafes,Q2,2,1
+cafes,Q2,3,0
+cafes,Q2,4,1
+cafes,Q2,5,0
+cafes,Q3,1,0
+cafes,Q3,2,1
+cafes,Q3,3,0
+cafes,Q3,4,0
+cafes,Q3,5,0
+cafes,Q4,1,0
+cafes,Q4,2,0
+cafes,Q4,3,1
+cafes,Q4,4,1
+cafes,Q4,5,1
+cafes,Q5,1,1
+cafes,Q5,2,0
+cafes,Q5,3,0
+cafes,Q5,4,0
+cafes,Q5,5,0
+cafes,Q6,1,0
+cafes,Q6,2,0
+cafes,Q6,3,0
+cafes,Q6,4,0
+cafes,Q6,5,0
+cafes,Q7,1,0
+cafes,Q7,2,0
+cafes,Q7,3,1
+cafes,Q7,4,1
+cafes,Q7,5,0
+cafes,Q8,1,0
+cafes,Q8,2,0
+cafes,Q8,3,0
+cafes,Q8,4,0
+cafes,Q8,5,0
+cafes,Q9,1,1
+cafes,Q9,2,0
+cafes,Q9,3,0
+cafes,Q9,4,1
+cafes,Q9,5,1
+cafes,Q10,1,1
+cafes,Q10,2,1
+cafes,Q10,3,0
+cafes,Q10,4,0
+cafes,Q10,5,0
