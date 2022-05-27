@@ -43,7 +43,7 @@ def roll_trip():
     trip_types = [act_choice, sight_choice, food_choice]
     print(trip_types)
 
-    radius = 1000
+    radius = 2500
     # retrieve the destination from user input to get the location info
     dest = "1 Spadina Cres, Toronto"
     dest_url = ('https://maps.googleapis.com/maps/api/geocode/json?address={0}&key={1}').format(dest, gkey)
@@ -53,7 +53,7 @@ def roll_trip():
 
     # use Places Nearby search to return the highest ranked of that `type` or `keyword`
 
-    act_url = ("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location={0}%2C{1}&radius={2}&type={3}&rankby=prominence&key={4}").format(dest_lat, dest_lng, radius, trip_types[0], gkey)
+    act_url = ("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location={0}%2C{1}&radius={2}&keyword={3}&rankby=prominence&key={4}").format(dest_lat, dest_lng, radius, trip_types[0], gkey)
     act_req = requests.get(act_url).json()
     act_dest = ""
     if act_req["status"] == "ZERO_RESULTS":
@@ -62,7 +62,7 @@ def roll_trip():
     else:
         act_dest = [act_req["results"][0]["name"], act_req["results"][0]["vicinity"]]
 
-    sight_url = ("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location={0}%2C{1}&radius={2}&type={3}&rankby=prominence&key={4}").format(dest_lat, dest_lng, radius, trip_types[1], gkey)
+    sight_url = ("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location={0}%2C{1}&radius={2}&keyword={3}&rankby=prominence&key={4}").format(dest_lat, dest_lng, radius, trip_types[1], gkey)
     sight_req = requests.get(sight_url).json()
     sight_dest = ""
     if sight_req["status"] == "ZERO_RESULTS":
@@ -71,7 +71,7 @@ def roll_trip():
     else:
         sight_dest = [sight_req["results"][0]["name"], sight_req["results"][0]["vicinity"]]
 
-    food_url = ("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location={0}%2C{1}&radius={2}&type={3}&rankby=prominence&key={4}").format(dest_lat, dest_lng, radius, trip_types[2], gkey)
+    food_url = ("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location={0}%2C{1}&radius={2}&keyword={3}&rankby=prominence&key={4}").format(dest_lat, dest_lng, radius, trip_types[2], gkey)
     food_req = requests.get(food_url).json()
     food_dest = ""
     if food_req["status"] == "ZERO_RESULTS":
