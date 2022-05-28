@@ -20,15 +20,15 @@ def roll_trip():
     cluster = 0
 
     # roll an activity
-    activity = list(ClusterAvgValues[['amusement_park', 'beach', 'park', 'movie_theater', 'museum', 'shopping_mall', 'zoo', 'art_gallery', 'night_club', 'swimming-pools', 'gym', 'spa']])
-    activity_weights = np.array(ClusterAvgValues[['amusement_park', 'beach', 'park', 'movie_theater', 'museum', 'shopping_mall', 'zoo', 'art_gallery', 'night_club', 'swimming-pools', 'gym', 'spa']])
+    activity = list(ClusterAvgValues[['resort', 'beach', 'park', 'movie_theater', 'museum', 'shopping_mall', 'zoo', 'art_gallery', 'night_club', 'swimming-pools', 'gym', 'beauty-hair-spa']])
+    activity_weights = np.array(ClusterAvgValues[['resort', 'beach', 'park', 'movie_theater', 'museum', 'shopping_mall', 'zoo', 'art_gallery', 'night_club', 'swimming-pools', 'gym', 'beauty-hair-spa']])
     cl_act_weights = activity_weights[cluster]
     normalized_act = cl_act_weights / cl_act_weights.sum()
     act_choice = choice(activity, p=normalized_act)
 
     # roll a sightseeing
-    sightseeing = list(ClusterAvgValues[['church', 'natural_feature', 'landmark', 'gardens']])
-    sightseeing_weights = np.array(ClusterAvgValues[['church', 'natural_feature', 'landmark', 'gardens']])
+    sightseeing = list(ClusterAvgValues[['place_of_worship', 'view-points', 'monument', 'gardens']])
+    sightseeing_weights = np.array(ClusterAvgValues[['place_of_worship', 'view-points', 'monument', 'gardens']])
     cl_sight_weights = sightseeing_weights[cluster]
     normalized_sight = cl_sight_weights / cl_sight_weights.sum()
     sight_choice = choice(sightseeing, p=normalized_sight)
@@ -45,7 +45,7 @@ def roll_trip():
 
     radius = 2500
     # retrieve the destination from user input to get the location info
-    dest = "1 Spadina Cres, Toronto"
+    dest = "2153 W 4th Ave, Vancouver"
     dest_url = ('https://maps.googleapis.com/maps/api/geocode/json?address={0}&key={1}').format(dest, gkey)
     dest_req = requests.get(dest_url).json()
     dest_lat = dest_req["results"][0]["geometry"]["location"]["lat"]
@@ -83,5 +83,3 @@ def roll_trip():
                 "sightseeing": sight_dest,
                 "food & drink": food_dest }
     return your_trip
-    
-#print(json.dumps(food_req, indent=4, sort_keys=True))
