@@ -25,7 +25,6 @@ def roll_trip(cluster, dest):
     cl_act_weights = activity_weights[cluster]
     normalized_act = cl_act_weights / cl_act_weights.sum()
     act_choice = choice(activity, p=normalized_act)
-    print(act_choice)
 
     # roll a sightseeing
     sightseeing = list(ClusterAvgValues[['place_of_worship', 'view-points', 'monument', 'gardens']])
@@ -42,9 +41,8 @@ def roll_trip(cluster, dest):
     food_choice = choice(food, p=normalized_food)
 
     trip_types = [act_choice, sight_choice, food_choice]
-    print(trip_types)
 
-    radius = 5000
+    radius = 3500
     # retrieve the destination from user input to get the location info
     dest = ""
     dest_url = ('https://maps.googleapis.com/maps/api/geocode/json?address={0}&key={1}').format(dest, gkey)
