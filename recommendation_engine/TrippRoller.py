@@ -15,7 +15,7 @@ ClusterAvgValues = ClusterAvgValues.drop('Unnamed: 0', 1)
 
 # function to roll 1 activity, 1 sightseeing, 1 food according to cluster
 
-def roll_trip():
+def roll_trip(cluster, dest):
     # need to pass cluster value here from user profile
     cluster = 0
 
@@ -45,7 +45,7 @@ def roll_trip():
 
     radius = 2500
     # retrieve the destination from user input to get the location info
-    dest = "2153 W 4th Ave, Vancouver"
+    dest = ""
     dest_url = ('https://maps.googleapis.com/maps/api/geocode/json?address={0}&key={1}').format(dest, gkey)
     dest_req = requests.get(dest_url).json()
     dest_lat = dest_req["results"][0]["geometry"]["location"]["lat"]
@@ -79,7 +79,7 @@ def roll_trip():
         print(food_err)
     else:
         food_dest = [food_req["results"][0]["name"], food_req["results"][0]["vicinity"]]
-    your_trip = {"activity": act_dest,
-                "sightseeing": sight_dest,
-                "food & drink": food_dest }
+    your_trip = {act_dest,
+                sight_dest,
+                food_dest}
     return your_trip
