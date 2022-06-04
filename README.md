@@ -7,9 +7,9 @@ TrippR is a navigation and travel recommendation app.
 
 # Table of Contents
 
-1. [Overview](#purpose)
-* [The Goal](#the-goal)
+1. [Overview](#overview)
 * [Purpose](#purpose)
+* [The Goal](#the-goal)
 2. [How It Works](#how-it-works)
 3. [Data Research](#data-research)
 4. [Related Work](#related-work)
@@ -420,6 +420,7 @@ We reviewed other projects and resources that have previously done work in this 
 ## Using Google Reviews Data
 
 Comparing Tourist Preferences in Asia and Europe (_Sam Childs and Vasanth Rajasekaran at UC Irvine_): <https://vasanth16.github.io/>
+
 Travel Review Analysis (_Wirach Leelakiatiwong_): <https://www.kaggle.com/code/wirachleelakiatiwong/travel-review-analysis>
 
 ## Travel Recommendations with ML
@@ -430,6 +431,7 @@ SmartTourister (_Salil Gautam, Shubham Verma, Nishant Gore_): https://github.com
 Optimizing Travel Itineraries With Machine Learning (Vladimir Lazovskiy): <https://github.com/vlazovskiy/route-optimizer-machine-learning>
 
 Computing Optimal Roadtrips on a Budget (_Randal Olson_): <https://github.com/rhiever/Data-Analysis-and-Machine-Learning-Projects/blob/master/pareto-optimized-road-trip/optimized-state-capitols-trip.ipynb>
+
 Optimal Road Trips Across the World (_Randy Olson_): >https://github.com/rhiever/optimal-roadtrip-usa>
 
 Road Trip Router (_Peter Sanders_): <https://github.com/hxtk/Road-Trip-Router>
@@ -437,7 +439,9 @@ Road Trip Router (_Peter Sanders_): <https://github.com/hxtk/Road-Trip-Router>
 ## APIs Reference
 
 Travel Advisor (_Adrian Hajdin_): <https://github.com/adrianhajdin/project_travel_advisor>
+
 Awesome Travel (<https://github.com/unseen1980/awesome-travel>)
+
 Tourism APIs <https://www.programmableweb.com/category/tourism/api>
 
 # Challenges
