@@ -4,13 +4,13 @@ TrippR
 # Table of Contents
 
 1. [Overview](#Overview)
-2. [Background] (#Background)
-2. [Objective](#Objective)
-2. [How It Works](#how-it-works)
-3. [Data Research](#data-research)
-4. [Related Work](#related-work)
-5. [Challenges](#challenges)
-6. [Improvements](#improvements)
+2. [Background](#Background)
+3. [Objective](#Objective)
+4. [How It Works](#how-it-works)
+5. [Data Research](#data-research)
+6. [Related Work](#related-work)
+7. [Challenges](#challenges)
+8. [Improvements](#improvements)
 
 # Overview
 
@@ -105,6 +105,7 @@ The Trippr team reviewed other projects and resources that have previously done 
 ## Using Google Reviews Data
 
 Comparing Tourist Preferences in Asia and Europe (_Sam Childs and Vasanth Rajasekaran at UC Irvine_): <https://vasanth16.github.io/>
+
 Travel Review Analysis (_Wirach Leelakiatiwong_): <https://www.kaggle.com/code/wirachleelakiatiwong/travel-review-analysis>
 
 ## Unsupervised Machine Learning Model
@@ -130,13 +131,16 @@ The list with the 3 stops goes to JS through Flask, and this plugs in then to Ma
 - References:
 Optimizing Travel Itineraries With Machine Learning (Vladimir Lazovskiy): <https://github.com/vlazovskiy/route-optimizer-machine-learning>
 Computing Optimal Roadtrips on a Budget (_Randal Olson_): <https://github.com/rhiever/Data-Analysis-and-Machine-Learning-Projects/blob/master/pareto-optimized-road-trip/optimized-state-capitols-trip.ipynb>
+
 Optimal Road Trips Across the World (_Randy Olson_): >https://github.com/rhiever/optimal-roadtrip-usa>
 Road Trip Router (_Peter Sanders_): <https://github.com/hxtk/Road-Trip-Router>
 
 ## APIs Reference
 
 Travel Advisor (_Adrian Hajdin_): <https://github.com/adrianhajdin/project_travel_advisor>
+
 Awesome Travel (<https://github.com/unseen1980/awesome-travel>)
+
 Tourism APIs <https://www.programmableweb.com/category/tourism/api>
 
 # Challenges
