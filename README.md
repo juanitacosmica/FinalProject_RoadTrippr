@@ -18,6 +18,8 @@ TrippR is a navigation and travel recommendation app.
 
 (See our __presentation:__ <https://bit.ly/3FJNgXG>)
 
+![Trippr_Front_End_Overview](/Resources/Images/Overview Image.png)
+
 ## Background
 
 According to a recent survey of road travelers in the US, more than three-quarters (78%) of Americans have found hidden gems along the road that they would not have seen if they were traveling another way. More than one-third (35%) said they prefer a mix of both planned and unexpected stops. Currently even the best travel recommendation apps do not optimize for route and even the best navigation apps do not optimize for the relevance and quality of the experience. TrippR does both, as well as provides high-rating recommendations based on the user profile.
