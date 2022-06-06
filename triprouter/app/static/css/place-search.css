@@ -1,0 +1,97 @@
+/*!
+ * place-search-js-v1.0.0
+ * Copyright 2018, MapQuest Inc. All Rights Reserved.
+ * Copying, reverse engineering, or modification is strictly prohibited.
+ */
+.mq-input,
+.mq-place-search {
+  width: 400px;
+}
+.mq-input {
+  line-height: 50px;
+  font: inherit;
+  outline: none;
+  box-sizing: border-box;
+  border-radius: 4px;
+  background-color: #fff;
+  border: 1px solid #bbb;
+  padding-right: 35px;
+  padding-left: 15px;
+  height: 50px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.mq-input::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+.mq-input::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: none;
+}
+.mq-input::-ms-clear {
+  display: none;
+}
+.mq-input-icon {
+  border: 0;
+  background: transparent;
+  position: absolute;
+  top: 0;
+  bottom: 10;
+  right: 16px;
+  outline: none;
+}
+.mq-input-icon svg {
+  fill: #cfcfcf;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(100%);
+}
+.mq-dropdown-menu {
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2), 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  margin-top: 3px;
+  overflow: hidden;
+}
+.mq-result {
+  cursor: pointer;
+  height: 50px;
+  line-height: 50px;
+  padding-left: 18px;
+  overflow: hidden;
+}
+.mq-result .mq-name {
+  color: #333;
+}
+.mq-result .mq-address {
+  font-size: smaller;
+  margin-left: 12px;
+  color: #aaa;
+}
+.mq-result-icon {
+  margin-right: 10px;
+  width: 14px;
+  height: 20px;
+  vertical-align: middle;
+}
+.mq-result-icon svg {
+  -webkit-transform: scale(0.9) translateY(2px);
+  transform: scale(0.9) translateY(2px);
+  fill: #666;
+}
+.mq-cursor {
+  background: #efefef;
+}
+.mq-cursor .mq-result-icon svg {
+  -webkit-transform: scale(1) translateY(2px);
+  transform: scale(1) translateY(2px);
+  fill: #333;
+}
+.mq-icon-clear {
+  cursor: pointer;
+}

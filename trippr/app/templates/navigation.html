@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <script src="{{url_for('static', filename='js/jquery.min.js')}}"></script>
+  <script src="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.js"></script>
+  <link rel="stylesheet" href="{{url_for('static', filename='css/bootstrap.min.css')}}">
+  <link type="text/css" rel="stylesheet" href="https://api.mqcdn.com/sdk/mapquest-js/v1.3.2/mapquest.css" />
+  <link rel="stylesheet" href="{{url_for('static', filename='css/navigation.css')}}">
+  <script src="https://api.mqcdn.com/sdk/place-search-js/v1.0.0/place-search.js"></script>
+  <script src="{{url_for('static', filename='js/activator.js')}}"></script>
+  <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+  <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+  <link type="text/css" rel="stylesheet" href="{{url_for('static', filename='css/place-search.css')}}" />
+
+
+  <script>
+    var key = 'kmoantt9xPXOVlhJ1FyrSJIXMCPrwIIO';
+    var container = '';
+    var useDeviceLocation = true;
+    var collection = [
+      'poi',
+      'airport',
+      'address',
+      'adminArea',
+    ];
+  </script>
+</head>
+
+<body style="border: 0; margin: 0;">
+  <div id="map"></div>
+
+  <div class="formBlock" id="hidemeafterclick">
+    <h2 class="formTitle">TRIPPR ROUTE PLANNER</h2>
+    <form id="form">
+      <div class="row">
+        <div class="col-lg-12">
+          <div id="inputFormRow">
+            <div class="input-group mb-3 pr-2">
+              <span class="viewpoint-img">A</span>
+              <span class="connected-line"></span>
+              <input type="search" name="start" class="input form-control m-input" id="start"
+                placeholder="Where are you?" />
+            </div>
+          </div>
+          <div id="inputFormRow">
+            <div class="input-group mb-3 pr-2">
+              <span class="viewpoint-img">B</span>
+              <span class="connected-line"></span>
+              <input type="text" name="end" class="input form-control m-input" id="end"
+                placeholder="Where you going?" />
+            </div>
+          </div>
+          <div id="newRow"></div>
+          <div style="border-bottom: 2px solid #e5e5e5; padding-bottom: 15px;">
+            <a id="addRow" class="btn"><span>+</span> Add A Stop</a>
+          </div>
+        </div>
+      </div>
+      <div class="btn-check">
+        <label class="nav_container">
+          <input type="checkbox" checked name="checkbox" id="btnCheck" /> Optimize this trip
+        </label>
+      </div>
+      <div class="btn-submit-area">
+        <button type="button" class="submit-btn" id="routeCalculate"
+          href="{{ url_for('index.script_view') }}"><span>Show Me The Way</span></button>
+      </div>
+    </form>
+  </div>
+  <!--Adding a Way Point -----------------!
+     !--------------------------------------!
+     !-- when the user clicks on add a stop !
+     !-- this script/function will run      !
+     !-- this will also handle the route    !
+     !-- calculations ----------------      !
+     !-------------------------------------->
+  <script type="module">
+
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-app.js";
+    import { getFirestore } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-firestore.js";
+    import { collection, addDoc, setDoc, getDoc, doc, getDocs } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-firestore.js";
+    import { getAuth } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-auth.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyAizKiBWMmyxDAF9BkJFTfsk8VnEXzCnnQ",
+      authDomain: "trippr-62b9f.firebaseapp.com",
+      databaseURL: "https://trippr-62b9f-default-rtdb.firebaseio.com",
+      projectId: "trippr-62b9f",
+      storageBucket: "trippr-62b9f.appspot.com",
+      messagingSenderId: "836402456269",
+      appId: "1:836402456269:web:3fd354f16e2d5f84d8ab84",
+      measurementId: "G-MN1VTEJYGM"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+    const auth = getAuth();
+
+
+    L.mapquest.key = 'kmoantt9xPXOVlhJ1FyrSJIXMCPrwIIO';
+
+    let map = L.mapquest.map('map', {
+      center: [40.7128, -74.0059],
+      layers: L.mapquest.tileLayer('map'),
+      zoom: 13
+    });
+
+    $("#addRow").click(function () {
+      var char = next_stop();
+      var id = 'stop_' + document.getElementsByName('viewpoints[]').length + 1;
+      var html = '';
+      html += '<div id="inputFormRow">';
+      html += '<div class="input-group mb-3 pr-2">';
+      html += '<span class="viewpoint-img">' + char + '</span>',
+        html += '<span class="connected-line"></span>';
+      html += '<input type="search" name="viewpoints[]" id="' + id + '" class="input form-control m-input mq-input"  autocomplete="off" spellcheck="false"'
+      html += ' role="combobox" aria-autocomplete="both" aria-expanded="false" aria-owns="mq-place-search-listbox-' + id + '" '
+      html += ' placeholder="Next Stop"/>';
+      html += '<div class="input-group-append">';
+      html += '<a id="removeRow" class="btn">✖</a>';
+      html += '</div>';
+      html += '</div>';
+
+      $('#newRow').append(html);
+      $(".connected-line").css("border-left", "4px dotted green");
+      $(".connected-line").last().css("border-left", "none");
+      $(".form-control").css("border-radius", "5px");
+
+      addlistener(id);
+    });
+
+    $(".connected-line").last().css("border-left", "none");
+    // remove row
+    $(document).on('click', '#removeRow', function () {
+      $(this).closest('#inputFormRow').remove();
+      $(".connected-line").last().css("border-left", "none");
+    });
+
+    function next_stop() {
+      const str = $('.viewpoint-img').last().html();
+      const nextLetter = String.fromCharCode(str.charCodeAt(str.length - 1) + 1);
+      return (nextLetter);
+    }
+
+    function addlistener(id) {
+      // This example will load jQuery dynamically, but this could be any script...
+      loadScripts({
+        test: function () { return typeof placeSearch !== 'undefined'; },
+        scripts: 'https://api.mqcdn.com/sdk/place-search-js/v1.0.0/place-search.js',
+        done: function () {
+          placeSearch({
+            key: key,
+            container: document.querySelector('#' + id),
+            useDeviceLocation: useDeviceLocation,
+            collection: collection
+          });
+
+        }
+      });
+    }
+
+    function processScriptData(list) {
+      // loop through the list and print the name of each item
+      for (var i = 0; i < list.length; i++) {
+        console.log(list[i]);
+      }
+    }
+
+    routeCalculate.addEventListener('click', e => {
+      e.preventDefault();
+      map.remove();
+      var start = document.getElementById('start').value;
+      var end = document.getElementById('end').value;
+      let user_loca = document.getElementById('end').value;
+      var stopvalues = document.getElementsByName('viewpoints[]');
+      let viewpoints = [];
+
+
+      let fCluster = 0;
+
+      const user = auth.currentUser;
+      if (user) {
+        var id = user.uid;
+        console.log("user-id--->" + id);
+        somethings();
+        async function somethings() {
+          const docRef = doc(db, id, "users-cluster");
+          const docSnap = await getDoc(docRef);
+
+          if (docSnap.exists()) {
+            var firebaseCluster = docSnap.data("Cluster");
+            var cluster = firebaseCluster["Cluster"];
+            console.log("the user is in cluster " + cluster);
+            fCluster = cluster;
+          } else {
+            // doc.data() will be undefined in this case
+            console.log("No such document!");
+          }
+        }
+
+        // send post request to /script with: end and fCluster
+        jQuery.ajax({
+          type: "POST",
+          url: "/script",
+          data: {
+            end: end,
+            cluster: fCluster
+          },
+          success: function (data) {
+            console.log("success");
+            // console.log(data);
+            // parse data as JSON
+            var list = JSON.parse(data);
+
+            // loop through the list and print the name of each item
+            for (var i = 0; i < list.length; i++) {
+              console.log(list[i]);
+            }
+
+            // OR
+            // processScriptData(list);
+          },
+          error: function (data) {
+            console.log("error");
+            console.log(data);
+          }
+        });
+      }
+
+      var checkBox = document.getElementById("btnCheck");
+      var route_opt = Boolean;
+
+      if (checkBox.checked == true) {
+        route_opt = true;
+      } else {
+        route_opt = false;
+      }
+
+      for (var i = 0; i < stopvalues.length; i++) {
+        viewpoints.push(stopvalues[i].value);
+      }
+      load_map_directions();
+
+      document.getElementById('form').reset();
+
+      L.mapquest.directions().route({
+        start: start,
+        end: end,
+        waypoints: viewpoints,
+        optimizeWaypoints: route_opt
+      });
+    });
+
+    function load_map_directions() {
+      L.mapquest.key = 'kmoantt9xPXOVlhJ1FyrSJIXMCPrwIIO';
+      map = L.mapquest.map('map', {
+        center: [40.7128, -74.0059],
+        layers: L.mapquest.tileLayer('map'),
+        zoom: 13
+      });
+    }
+
+    function hideNav() {
+      var x = document.getElementById("hidemeafterclick");
+      if (x.style.display == "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+  </script>
+
+  <script>
+    window.onload = function () {
+      placeSearch({
+        key: key,
+        container: document.querySelector('#start'),
+        useDeviceLocation: useDeviceLocation,
+        collection: collection
+      });
+
+      placeSearch({
+        key: key,
+        container: document.querySelector('#end'),
+        useDeviceLocation: useDeviceLocation,
+        collection: collection
+      });
+    }	 
+  </script>
+
+
+
+
+</body>
+
+</html>
