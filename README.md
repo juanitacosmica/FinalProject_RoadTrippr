@@ -16,9 +16,9 @@ TrippR
 
 TrippR is a navigation and travel recommendation app.
 
-(See our __presentation:__ <https://bit.ly/3FJNgXG>)
+(See our __presentation:__ <https://bit.ly/3mpAMf3>)
 
-![Trippr_Front_End_Overview](/Resources/Images/Overview Image.png)
+![Trippr_Front_End_Overview](/Resources/Images/Overview_Image.png)
 
 ## Background
 
